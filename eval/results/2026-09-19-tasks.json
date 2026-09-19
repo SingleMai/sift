@@ -1,0 +1,541 @@
+{
+  "recordedAt": "2026-09-19T04:35:27.018Z",
+  "model": "jev-latest",
+  "fixture": "eval/tasks.json",
+  "limitation": "Assistant-authored development scenarios using real Node test runner and ripgrep output plus synthetic cross-boundary JSON. One run per configuration, no independent labels, no main-model outcome or token measurement. Baseline is an explicit unfiltered tool-result object, not an existing host integration. Raw verification uses local disk and is not returned to the caller.",
+  "rows": [
+    {
+      "task": "failing-tests",
+      "chunkBytes": 1024,
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 5494.134042,
+      "commandDurationMs": 62.27041600000001,
+      "addedDurationMs": 5431.863625999999,
+      "judgment": {
+        "complete": true,
+        "requests": 4,
+        "usage": {
+          "inputTokens": 7522,
+          "outputTokens": 88
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "model": "jev-latest",
+        "counts": {
+          "kept": 2,
+          "filtered": 2,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 17768,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "not ok 25 - payment transitions to paid",
+          "start": 2469,
+          "end": 2508,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 'paid'",
+          "start": 2792,
+          "end": 2808,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 'pending'",
+          "start": 2811,
+          "end": 2828,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "# fail 1",
+          "start": 3366,
+          "end": 3374,
+          "retained": false
+        }
+      ],
+      "allRequiredRetained": false,
+      "capturedBytes": 3434,
+      "selectedBytes": 1989,
+      "response": {
+        "filteredBytes": 3144,
+        "unfilteredBytes": 4045,
+        "reduction": 0.22274412855377013
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 1004,
+          "decision": {
+            "status": "judged",
+            "probability": 0.8
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1004,
+          "end": 2022,
+          "decision": {
+            "status": "judged",
+            "probability": 0.23
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 2022,
+          "end": 3007,
+          "decision": {
+            "status": "judged",
+            "probability": 0.96
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 3007,
+          "end": 3434,
+          "decision": {
+            "status": "judged",
+            "probability": 0.15
+          }
+        }
+      ]
+    },
+    {
+      "task": "search-settings",
+      "chunkBytes": 1024,
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 3249.761625,
+      "commandDurationMs": 23.53820800000085,
+      "addedDurationMs": 3226.2234169999992,
+      "judgment": {
+        "complete": true,
+        "requests": 7,
+        "usage": {
+          "inputTokens": 13891,
+          "outputTokens": 154
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "model": "jev-latest",
+        "counts": {
+          "kept": 1,
+          "filtered": 6,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 38607,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "src/http/client.ts: maxRetries = 3; requestTimeoutMs = 5000;",
+          "start": 3504,
+          "end": 3564,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 7030,
+      "selectedBytes": 994,
+      "response": {
+        "filteredBytes": 1976,
+        "unfilteredBytes": 8003,
+        "reduction": 0.7530925902786455
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 1005,
+          "decision": {
+            "status": "judged",
+            "probability": 0.09
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1005,
+          "end": 2019,
+          "decision": {
+            "status": "judged",
+            "probability": 0.09
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 2019,
+          "end": 3033,
+          "decision": {
+            "status": "judged",
+            "probability": 0.1
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 3033,
+          "end": 4027,
+          "decision": {
+            "status": "judged",
+            "probability": 0.96
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 4027,
+          "end": 5028,
+          "decision": {
+            "status": "judged",
+            "probability": 0.06
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 5028,
+          "end": 6029,
+          "decision": {
+            "status": "judged",
+            "probability": 0.07
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 6029,
+          "end": 7030,
+          "decision": {
+            "status": "judged",
+            "probability": 0.07
+          }
+        }
+      ]
+    },
+    {
+      "task": "cross-boundary-json",
+      "chunkBytes": 1024,
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 763.0298330000005,
+      "commandDurationMs": 38.631124999999884,
+      "addedDurationMs": 724.3987080000006,
+      "judgment": {
+        "complete": true,
+        "requests": 3,
+        "usage": {
+          "inputTokens": 2289,
+          "outputTokens": 66
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "model": "jev-latest",
+        "counts": {
+          "kept": 3,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 5664,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "\"requestTimeoutMs\":5000",
+          "start": 1004,
+          "end": 1027,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "\"maxRetries\":3",
+          "start": 1028,
+          "end": 1042,
+          "retained": true
+        },
+        {
+          "stream": "stderr",
+          "text": "settings are from staging, not production.",
+          "start": 9,
+          "end": 51,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 1096,
+      "selectedBytes": 1096,
+      "response": {
+        "filteredBytes": 2065,
+        "unfilteredBytes": 1377,
+        "reduction": -0.4996368917937546
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 1024,
+          "decision": {
+            "status": "judged",
+            "probability": 0.89
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1024,
+          "end": 1044,
+          "decision": {
+            "status": "judged",
+            "probability": 0.81
+          }
+        },
+        {
+          "stream": "stderr",
+          "start": 0,
+          "end": 52,
+          "decision": {
+            "status": "judged",
+            "probability": 0.84
+          }
+        }
+      ]
+    },
+    {
+      "task": "failing-tests",
+      "chunkBytes": 8192,
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 4326.705709000002,
+      "commandDurationMs": 62.71341700000002,
+      "addedDurationMs": 4263.992292000002,
+      "judgment": {
+        "complete": true,
+        "requests": 1,
+        "usage": {
+          "inputTokens": 2016,
+          "outputTokens": 22
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "model": "jev-latest",
+        "counts": {
+          "kept": 1,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 4791,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "not ok 25 - payment transitions to paid",
+          "start": 2468,
+          "end": 2507,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 'paid'",
+          "start": 2791,
+          "end": 2807,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 'pending'",
+          "start": 2810,
+          "end": 2827,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "# fail 1",
+          "start": 3365,
+          "end": 3373,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 3433,
+      "selectedBytes": 3433,
+      "response": {
+        "filteredBytes": 4671,
+        "unfilteredBytes": 4044,
+        "reduction": -0.15504451038575673
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 3433,
+          "decision": {
+            "status": "judged",
+            "probability": 0.98
+          }
+        }
+      ]
+    },
+    {
+      "task": "search-settings",
+      "chunkBytes": 8192,
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 1098.2007090000006,
+      "commandDurationMs": 8.210166999999274,
+      "addedDurationMs": 1089.9905420000014,
+      "judgment": {
+        "complete": true,
+        "requests": 1,
+        "usage": {
+          "inputTokens": 2926,
+          "outputTokens": 22
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "model": "jev-latest",
+        "counts": {
+          "kept": 0,
+          "filtered": 1,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 8445,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "src/http/client.ts: maxRetries = 3; requestTimeoutMs = 5000;",
+          "start": 3504,
+          "end": 3564,
+          "retained": false
+        }
+      ],
+      "allRequiredRetained": false,
+      "capturedBytes": 7030,
+      "selectedBytes": 0,
+      "response": {
+        "filteredBytes": 816,
+        "unfilteredBytes": 8003,
+        "reduction": 0.8980382356616269
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 7030,
+          "decision": {
+            "status": "judged",
+            "probability": 0.79
+          }
+        }
+      ]
+    },
+    {
+      "task": "cross-boundary-json",
+      "chunkBytes": 8192,
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 1377.1386250000014,
+      "commandDurationMs": 33.87566700000025,
+      "addedDurationMs": 1343.2629580000012,
+      "judgment": {
+        "complete": true,
+        "requests": 2,
+        "usage": {
+          "inputTokens": 1433,
+          "outputTokens": 44
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "model": "jev-latest",
+        "counts": {
+          "kept": 2,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 3436,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "\"requestTimeoutMs\":5000",
+          "start": 1004,
+          "end": 1027,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "\"maxRetries\":3",
+          "start": 1028,
+          "end": 1042,
+          "retained": true
+        },
+        {
+          "stream": "stderr",
+          "text": "settings are from staging, not production.",
+          "start": 9,
+          "end": 51,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 1096,
+      "selectedBytes": 1096,
+      "response": {
+        "filteredBytes": 2064,
+        "unfilteredBytes": 1376,
+        "reduction": -0.5
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 1044,
+          "decision": {
+            "status": "judged",
+            "probability": 0.92
+          }
+        },
+        {
+          "stream": "stderr",
+          "start": 0,
+          "end": 52,
+          "decision": {
+            "status": "judged",
+            "probability": 0.84
+          }
+        }
+      ]
+    }
+  ],
+  "qualityPassed": false
+}

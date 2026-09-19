@@ -37,8 +37,34 @@ npm run smoke:live
 npm run eval:live
 npm run smoke:mcp:live
 npm run smoke:repository:live
+npm run eval:tasks:live
 ```
 
 Reports are written under ignored `.tmp/`. The repository smoke sends this repository's test output to TypeSafe. The other commands use public synthetic text. Model selection follows Sift's default; threshold 0.8 and smaller test windows are explicit experimental settings, not a recommended global policy. Error-path contract tests added after the repository snapshot increase the suite count without altering the recorded historical result.
 
 Next quality work should use independently labeled, varied command outputs and held-out tasks, measure lost decisive evidence and full response overhead, and compare actual caller outcomes and latency against unfiltered output. Keep threshold configuration explicit until those tradeoffs are measured.
+
+## Task-level comparison: failures exposed
+
+[Task definitions](tasks.json) fix expected decisive evidence before inference. The commands run a deliberately failing real Node test, real ripgrep over public fixture settings, and synthetic JSON whose timeout scalar crosses a 1 KiB boundary, with an important warning on stderr. These are authored development tasks, not organic user tasks or independently labeled data. [Recorded results](results/2026-09-19-tasks.json) include all six executions, including failures.
+
+| Task                         | Target bytes | All required evidence retained   | Tool-result byte change vs baseline | Added time |
+| ---------------------------- | -----------: | -------------------------------- | ----------------------------------: | ---------: |
+| Failing tests                |        1,024 | **No: failure count lost**       |                       22.3% smaller |     5.43 s |
+| Search settings              |        1,024 | Yes                              |                       75.3% smaller |     3.23 s |
+| Cross-boundary JSON + stderr |        1,024 | Yes                              |                        50.0% larger |     0.72 s |
+| Failing tests                |        8,192 | Yes                              |                        15.5% larger |     4.26 s |
+| Search settings              |        8,192 | **No: only relevant match lost** |                       89.8% smaller |     1.09 s |
+| Cross-boundary JSON + stderr |        8,192 | Yes                              |                        50.0% larger |     1.34 s |
+
+All runs use threshold 0.8 and 2,048 bytes of neighboring context. Each configuration ran once; command durations and test-runner text timing differ slightly. Configuration order was not randomized. Total usage: 18 judgments, 30,077 input and 396 output tokens. These timings do not isolate network variability or model warm-up.
+
+The 1 KiB test-summary target scored 0.15 despite containing `# fail 1`; the 8 KiB search target scored 0.79 despite containing the required settings. The misleading 89.8% reduction is therefore a **quality failure**, not a success. Four of six runs retained all predeclared markers; retaining those markers does not prove the caller can complete the task correctly. No caller model or tokenizer was evaluated.
+
+The baseline is explicitly constructed as an unfiltered MCP tool-result object with one JSON text item containing `execution`, `stdout`, and `stderr`, plus `isError: false`. Both measured sides include tool-result metadata and JSON escaping, but exclude JSON-RPC envelopes and transport framing. This is a reproducible byte comparison, not a claim about any particular client's token usage. Correctness verification reads local artifacts, not a second MCP response.
+
+The scorer validates returned byte ranges against the original streams and checks continuous coverage of each required marker. It cannot count concatenated fragments across an omitted gap or confuse stdout with stderr. Missing or duplicate fixture markers fail the harness rather than silently being counted as model misses. Two offline tests protect these measurement contracts.
+
+`eval:tasks:live` requires `rg` on PATH, writes the report even for measured quality failures, and exits nonzero for missing required evidence, incomplete judgment or response truncation. Deliberate test-command exit code 1 is expected and is not itself a harness failure. This billable quality experiment is separate from offline CI. Future runs retain exact inputs and responses privately under ignored `.tmp/task-evaluation-artifacts/` for diagnosis; the first recorded run predates that retention addition. The published report omits credentials, local paths and result IDs.
+
+The evidence does **not** support changing the universal cutoff or choosing one global chunk size. The next implementation experiment should compare format-aware TAP records and search-result records through the existing `ChunkStrategy` interface, using these failures as development regressions plus fresh held-out tasks. Merely lowering the cutoff until these cases pass would overfit the pilot. Small outputs also need an explicit product decision about whether filtering overhead is worthwhile; this evaluation does not introduce an automatic bypass or return below-threshold content.

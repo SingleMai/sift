@@ -4,7 +4,7 @@ Command output, selected for your task.
 
 Sift is a local MCP tool that runs a command, retains its original output, and selects evidence relevant to the calling model's stated purpose before returning it to context.
 
-**Status: experimental first implementation.** The command pipeline, stdio MCP tools, Jev adapter, and deterministic contract tests are implemented. Real task-quality evaluation and threshold calibration are not complete.
+**Status: experimental first implementation.** The command pipeline, stdio MCP tools, Jev adapter, and deterministic contract tests are implemented. Task-level live trials have exposed lost decisive evidence at both tested chunk sizes; this is not yet validated for unattended evidence filtering. See the [recorded failures and full-response measurements](eval/README.md#task-level-comparison-failures-exposed). Threshold calibration remains incomplete.
 
 ## Behavior
 
