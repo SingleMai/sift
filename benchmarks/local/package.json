@@ -1,0 +1,11 @@
+{
+  "name": "sift-local-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:rust": "cargo build --release --manifest-path rust/Cargo.toml",
+    "bench": "node compare.mjs"
+  },
+  "engines": { "node": ">=24" },
+  "dependencies": { "effect": "3.22.2" }
+}

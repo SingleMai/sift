@@ -1,0 +1,10 @@
+node_modules/
+target/
+.DS_Store
+.env
+.env.*
+!.env.example
+benchmarks/local/capture-*.txt
+benchmarks/local/rust-capture-*
+benchmarks/local/comparison-results.latest.json
+benchmarks/local/*.log

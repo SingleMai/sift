@@ -1,0 +1,3542 @@
+[
+  {
+    "variant": "native",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 115.290417,
+    "wallMs": 37.814333,
+    "cpuMs": 16.389,
+    "baselineRssMiB": 48.734375,
+    "peakRssMiB": 55.21875,
+    "maxRssMiB": 55.21875,
+    "loopP99Ms": 5.734399,
+    "loopMaxMs": 5.734399,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 29.905416000000002,
+        "indexMs": 1.433916999999994,
+        "judgePrepMs": 5.601375000000004,
+        "readbackMs": 0.5111670000000004,
+        "totalMs": 37.66912500000001,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 274.485875,
+    "wallMs": 41.16624999999999,
+    "cpuMs": 24.206,
+    "baselineRssMiB": 88.3125,
+    "peakRssMiB": 95.125,
+    "maxRssMiB": 95.125,
+    "loopP99Ms": 5.861375,
+    "loopMaxMs": 5.861375,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 28.394417000000004,
+        "indexMs": 1.093625000000003,
+        "judgePrepMs": 10.708334000000008,
+        "readbackMs": 0.5796670000000006,
+        "totalMs": 41.013417000000004,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 557.3245,
+    "maxRssMiB": 2.59375,
+    "results": [
+      {
+        "captureMs": 39.075832999999996,
+        "chunks": 127,
+        "indexMs": 0.316625,
+        "judgePrepMs": 5.787541999999999,
+        "lines": 6721,
+        "readbackMs": 0.744417,
+        "selectedMiB": 0.20500946044921875,
+        "sizeMiB": 1,
+        "totalMs": 46.009083,
+        "wireMiB": 1.5163583755493164
+      }
+    ],
+    "wallMs": 46.125208
+  },
+  {
+    "variant": "effect",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 223.50704199999996,
+    "wallMs": 49.85374999999999,
+    "cpuMs": 29.574,
+    "baselineRssMiB": 89.6875,
+    "peakRssMiB": 96.375,
+    "maxRssMiB": 96.375,
+    "loopP99Ms": 6.217727,
+    "loopMaxMs": 6.217727,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 34.856875,
+        "indexMs": 1.5019999999999811,
+        "judgePrepMs": 12.355208000000005,
+        "readbackMs": 0.6917499999999848,
+        "totalMs": 49.68058400000001,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 33.396833000000015,
+    "maxRssMiB": 2.5625,
+    "results": [
+      {
+        "captureMs": 25.008958,
+        "chunks": 127,
+        "indexMs": 0.251625,
+        "judgePrepMs": 4.456667,
+        "lines": 6721,
+        "readbackMs": 0.608875,
+        "selectedMiB": 0.20500946044921875,
+        "sizeMiB": 1,
+        "totalMs": 30.403291999999997,
+        "wireMiB": 1.5163583755493164
+      }
+    ],
+    "wallMs": 30.45925
+  },
+  {
+    "variant": "native",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 112.21916699999997,
+    "wallMs": 35.939417000000006,
+    "cpuMs": 15.79,
+    "baselineRssMiB": 48.8125,
+    "peakRssMiB": 55.1875,
+    "maxRssMiB": 55.1875,
+    "loopP99Ms": 5.709823,
+    "loopMaxMs": 5.709823,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 28.141125000000002,
+        "indexMs": 1.3046250000000015,
+        "judgePrepMs": 5.545917000000003,
+        "readbackMs": 0.5623330000000095,
+        "totalMs": 35.77962500000001,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 32.86108300000001,
+    "maxRssMiB": 2.5625,
+    "results": [
+      {
+        "captureMs": 25.016417,
+        "chunks": 127,
+        "indexMs": 0.226875,
+        "judgePrepMs": 4.4934579999999995,
+        "lines": 6721,
+        "readbackMs": 0.5519999999999999,
+        "selectedMiB": 0.20500946044921875,
+        "sizeMiB": 1,
+        "totalMs": 30.369708,
+        "wireMiB": 1.5163583755493164
+      }
+    ],
+    "wallMs": 30.431791
+  },
+  {
+    "variant": "native",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 113.4197079999999,
+    "wallMs": 36.557042,
+    "cpuMs": 16.602,
+    "baselineRssMiB": 48.828125,
+    "peakRssMiB": 55.265625,
+    "maxRssMiB": 55.265625,
+    "loopP99Ms": 6.049791,
+    "loopMaxMs": 6.049791,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 28.788833999999994,
+        "indexMs": 1.3359999999999985,
+        "judgePrepMs": 5.591125000000005,
+        "readbackMs": 0.4593749999999943,
+        "totalMs": 36.39512499999999,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 213.84966600000007,
+    "wallMs": 44.667834,
+    "cpuMs": 24.395,
+    "baselineRssMiB": 87.65625,
+    "peakRssMiB": 96.5625,
+    "maxRssMiB": 96.5625,
+    "loopP99Ms": 6.070271,
+    "loopMaxMs": 6.070271,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 32.135249999999985,
+        "indexMs": 1.07733300000001,
+        "judgePrepMs": 10.58420799999999,
+        "readbackMs": 0.48724999999998886,
+        "totalMs": 44.52116699999999,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 111.52220800000009,
+    "wallMs": 35.496249999999996,
+    "cpuMs": 15.539,
+    "baselineRssMiB": 48.765625,
+    "peakRssMiB": 55.1875,
+    "maxRssMiB": 55.1875,
+    "loopP99Ms": 5.730303,
+    "loopMaxMs": 5.730303,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 28.041583000000003,
+        "indexMs": 1.305958000000004,
+        "judgePrepMs": 5.349041999999997,
+        "readbackMs": 0.4359589999999969,
+        "totalMs": 35.3445,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 208.402875,
+    "wallMs": 40.421583,
+    "cpuMs": 23.247,
+    "baselineRssMiB": 89.390625,
+    "peakRssMiB": 96.125,
+    "maxRssMiB": 96.125,
+    "loopP99Ms": 5.881855,
+    "loopMaxMs": 5.881855,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 28.035791999999987,
+        "indexMs": 1.122165999999993,
+        "judgePrepMs": 10.372000000000014,
+        "readbackMs": 0.49916600000000244,
+        "totalMs": 40.258583999999985,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 32.177834000000075,
+    "maxRssMiB": 2.5625,
+    "results": [
+      {
+        "captureMs": 24.264917,
+        "chunks": 127,
+        "indexMs": 0.258583,
+        "judgePrepMs": 4.543625,
+        "lines": 6721,
+        "readbackMs": 0.6115419999999999,
+        "selectedMiB": 0.20500946044921875,
+        "sizeMiB": 1,
+        "totalMs": 29.749667,
+        "wireMiB": 1.5163583755493164
+      }
+    ],
+    "wallMs": 29.786917
+  },
+  {
+    "variant": "effect",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 208.68704200000002,
+    "wallMs": 39.84625,
+    "cpuMs": 22.548,
+    "baselineRssMiB": 86.4375,
+    "peakRssMiB": 95.609375,
+    "maxRssMiB": 95.609375,
+    "loopP99Ms": 5.758975,
+    "loopMaxMs": 5.758975,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 27.784458,
+        "indexMs": 1.0270419999999945,
+        "judgePrepMs": 10.165291000000025,
+        "readbackMs": 0.5094170000000133,
+        "totalMs": 39.696124999999995,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 35.019250000000284,
+    "maxRssMiB": 2.546875,
+    "results": [
+      {
+        "captureMs": 27.368125,
+        "chunks": 127,
+        "indexMs": 0.269708,
+        "judgePrepMs": 4.571750000000001,
+        "lines": 6721,
+        "readbackMs": 0.51375,
+        "selectedMiB": 0.20500946044921875,
+        "sizeMiB": 1,
+        "totalMs": 32.797458,
+        "wireMiB": 1.5163583755493164
+      }
+    ],
+    "wallMs": 32.838459
+  },
+  {
+    "variant": "native",
+    "size": 1,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 109.7488330000001,
+    "wallMs": 36.111166000000004,
+    "cpuMs": 15.887,
+    "baselineRssMiB": 48.9375,
+    "peakRssMiB": 55.453125,
+    "maxRssMiB": 55.453125,
+    "loopP99Ms": 6.430719,
+    "loopMaxMs": 6.430719,
+    "results": [
+      {
+        "sizeMiB": 1,
+        "captureMs": 28.370666,
+        "indexMs": 1.4210000000000065,
+        "judgePrepMs": 5.478499999999997,
+        "readbackMs": 0.45395899999999756,
+        "totalMs": 35.96445799999999,
+        "chunks": 127,
+        "lines": 6721,
+        "wireMiB": 1.5163583755493164,
+        "selectedMiB": 0.20500946044921875
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 167.9904160000001,
+    "wallMs": 92.405292,
+    "cpuMs": 85.649,
+    "baselineRssMiB": 48.859375,
+    "peakRssMiB": 70.3125,
+    "maxRssMiB": 70.3125,
+    "loopP99Ms": 5.730303,
+    "loopMaxMs": 5.730303,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 34.33045800000001,
+        "indexMs": 4.528999999999996,
+        "judgePrepMs": 49.33987499999999,
+        "readbackMs": 3.6142910000000086,
+        "totalMs": 92.253875,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 271.8232919999996,
+    "wallMs": 103.62174999999999,
+    "cpuMs": 105.074,
+    "baselineRssMiB": 86.78125,
+    "peakRssMiB": 121.671875,
+    "maxRssMiB": 121.671875,
+    "loopP99Ms": 6.438911,
+    "loopMaxMs": 6.438911,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 34.71875,
+        "indexMs": 6.003083000000004,
+        "judgePrepMs": 58.89474999999999,
+        "readbackMs": 3.338166000000001,
+        "totalMs": 103.46504199999998,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 88.275666,
+    "maxRssMiB": 2.65625,
+    "results": [
+      {
+        "captureMs": 32.875209000000005,
+        "chunks": 1269,
+        "indexMs": 2.572125,
+        "judgePrepMs": 44.445499999999996,
+        "lines": 67216,
+        "readbackMs": 5.8218749999999995,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 85.864417,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 86.02575
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 294.1766669999997,
+    "wallMs": 108.731833,
+    "cpuMs": 113.696,
+    "baselineRssMiB": 89.5,
+    "peakRssMiB": 122.140625,
+    "maxRssMiB": 122.140625,
+    "loopP99Ms": 7.630847,
+    "loopMaxMs": 7.630847,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 35.963584,
+        "indexMs": 8.551749999999998,
+        "judgePrepMs": 59.68545800000001,
+        "readbackMs": 3.823042000000015,
+        "totalMs": 108.58920900000001,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 87.4063329999999,
+    "maxRssMiB": 2.6875,
+    "results": [
+      {
+        "captureMs": 31.542,
+        "chunks": 1269,
+        "indexMs": 1.7498749999999998,
+        "judgePrepMs": 45.145125,
+        "lines": 67216,
+        "readbackMs": 5.843833,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 84.40575,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 84.564708
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 168.97058300000026,
+    "wallMs": 93.96270899999999,
+    "cpuMs": 88.965,
+    "baselineRssMiB": 48.890625,
+    "peakRssMiB": 70.421875,
+    "maxRssMiB": 70.421875,
+    "loopP99Ms": 6.324223,
+    "loopMaxMs": 6.324223,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 34.259792,
+        "indexMs": 5.212375000000009,
+        "judgePrepMs": 50.530333999999996,
+        "readbackMs": 3.367750000000001,
+        "totalMs": 93.81812499999998,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 85.96558400000004,
+    "maxRssMiB": 2.6875,
+    "results": [
+      {
+        "captureMs": 31.008542,
+        "chunks": 1269,
+        "indexMs": 1.694916,
+        "judgePrepMs": 44.944625,
+        "lines": 67216,
+        "readbackMs": 5.828583,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 83.60575,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 83.763791
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 168.66020900000012,
+    "wallMs": 94.01429200000001,
+    "cpuMs": 87.413,
+    "baselineRssMiB": 48.859375,
+    "peakRssMiB": 70.453125,
+    "maxRssMiB": 70.453125,
+    "loopP99Ms": 6.311935,
+    "loopMaxMs": 6.311935,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 34.68233299999999,
+        "indexMs": 4.681375000000003,
+        "judgePrepMs": 50.512541999999996,
+        "readbackMs": 3.5417919999999867,
+        "totalMs": 93.85833299999999,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 272.3000000000002,
+    "wallMs": 102.726959,
+    "cpuMs": 106.953,
+    "baselineRssMiB": 86.8125,
+    "peakRssMiB": 121.71875,
+    "maxRssMiB": 121.71875,
+    "loopP99Ms": 6.012927,
+    "loopMaxMs": 6.012927,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 33.73658399999999,
+        "indexMs": 6.5359169999999835,
+        "judgePrepMs": 58.460458999999986,
+        "readbackMs": 3.312624999999997,
+        "totalMs": 102.54279199999999,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 168.66674999999987,
+    "wallMs": 92.645625,
+    "cpuMs": 86.21,
+    "baselineRssMiB": 48.953125,
+    "peakRssMiB": 70.46875,
+    "maxRssMiB": 70.46875,
+    "loopP99Ms": 5.931007,
+    "loopMaxMs": 5.931007,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 34.365415999999996,
+        "indexMs": 4.420292000000003,
+        "judgePrepMs": 49.772417000000004,
+        "readbackMs": 3.4708750000000066,
+        "totalMs": 92.491875,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 271.4368750000003,
+    "wallMs": 102.392958,
+    "cpuMs": 105.685,
+    "baselineRssMiB": 86.25,
+    "peakRssMiB": 121.6875,
+    "maxRssMiB": 121.6875,
+    "loopP99Ms": 5.881855,
+    "loopMaxMs": 5.881855,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 33.01070899999999,
+        "indexMs": 6.214416999999997,
+        "judgePrepMs": 59.13708299999999,
+        "readbackMs": 3.3037080000000003,
+        "totalMs": 102.24225000000001,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 83.7334579999997,
+    "maxRssMiB": 2.65625,
+    "results": [
+      {
+        "captureMs": 29.295166000000002,
+        "chunks": 1269,
+        "indexMs": 1.828417,
+        "judgePrepMs": 44.101083,
+        "lines": 67216,
+        "readbackMs": 5.8180000000000005,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 81.161041,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 81.275542
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 283.7239580000005,
+    "wallMs": 103.66912500000001,
+    "cpuMs": 104.279,
+    "baselineRssMiB": 87.203125,
+    "peakRssMiB": 129.3125,
+    "maxRssMiB": 129.3125,
+    "loopP99Ms": 6.045695,
+    "loopMaxMs": 6.045695,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 34.884333999999996,
+        "indexMs": 5.026208999999994,
+        "judgePrepMs": 59.76162500000001,
+        "readbackMs": 3.3632499999999936,
+        "totalMs": 103.507417,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 83.91954200000055,
+    "maxRssMiB": 2.6875,
+    "results": [
+      {
+        "captureMs": 29.002166,
+        "chunks": 1269,
+        "indexMs": 1.782,
+        "judgePrepMs": 44.586541,
+        "lines": 67216,
+        "readbackMs": 5.882125,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 81.38375,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 81.50575
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 168.8970419999996,
+    "wallMs": 92.32470799999999,
+    "cpuMs": 87.229,
+    "baselineRssMiB": 48.875,
+    "peakRssMiB": 70.515625,
+    "maxRssMiB": 70.515625,
+    "loopP99Ms": 6.299647,
+    "loopMaxMs": 6.299647,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 33.61870799999999,
+        "indexMs": 5.036625000000001,
+        "judgePrepMs": 49.70466599999999,
+        "readbackMs": 3.373250000000013,
+        "totalMs": 92.17570799999999,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 687.665833,
+    "wallMs": 609.324625,
+    "cpuMs": 707.28,
+    "baselineRssMiB": 48.84375,
+    "peakRssMiB": 102.015625,
+    "maxRssMiB": 102.015625,
+    "loopP99Ms": 5.742591,
+    "loopMaxMs": 5.902335,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 72.461958,
+        "indexMs": 27.833249999999992,
+        "judgePrepMs": 475.62675,
+        "readbackMs": 30.826416999999992,
+        "totalMs": 609.166833,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 865.9102499999999,
+    "wallMs": 689.489208,
+    "cpuMs": 857.802,
+    "baselineRssMiB": 87.859375,
+    "peakRssMiB": 218.015625,
+    "maxRssMiB": 218.03125,
+    "loopP99Ms": 5.804031,
+    "loopMaxMs": 6.017023,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 78.70854200000002,
+        "indexMs": 36.06616599999998,
+        "judgePrepMs": 519.9134170000001,
+        "readbackMs": 52.373333,
+        "totalMs": 689.3181669999999,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 604.3745410000001,
+    "maxRssMiB": 3.015625,
+    "results": [
+      {
+        "captureMs": 63.346917000000005,
+        "chunks": 12683,
+        "indexMs": 20.282333,
+        "judgePrepMs": 456.966166,
+        "lines": 672164,
+        "readbackMs": 58.75825,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 599.5292089999999,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 601.676833
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 877.9232089999996,
+    "wallMs": 695.727208,
+    "cpuMs": 877.187,
+    "baselineRssMiB": 89.328125,
+    "peakRssMiB": 216.578125,
+    "maxRssMiB": 216.578125,
+    "loopP99Ms": 6.230015,
+    "loopMaxMs": 6.770687,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 102.23149999999998,
+        "indexMs": 33.014167000000015,
+        "judgePrepMs": 527.779625,
+        "readbackMs": 30.759874999999965,
+        "totalMs": 695.557208,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 583.3072499999989,
+    "maxRssMiB": 3.015625,
+    "results": [
+      {
+        "captureMs": 58.7185,
+        "chunks": 12683,
+        "indexMs": 20.002584,
+        "judgePrepMs": 441.97875,
+        "lines": 672164,
+        "readbackMs": 58.707333,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 579.549041,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 580.601
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 696.5919999999987,
+    "wallMs": 620.948125,
+    "cpuMs": 719.338,
+    "baselineRssMiB": 48.921875,
+    "peakRssMiB": 102.03125,
+    "maxRssMiB": 102.03125,
+    "loopP99Ms": 5.701631,
+    "loopMaxMs": 5.718015,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 68.130709,
+        "indexMs": 27.60654200000002,
+        "judgePrepMs": 491.462667,
+        "readbackMs": 30.915458000000058,
+        "totalMs": 620.796917,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 584.1580420000009,
+    "maxRssMiB": 3.015625,
+    "results": [
+      {
+        "captureMs": 58.790958999999994,
+        "chunks": 12683,
+        "indexMs": 21.203166999999997,
+        "judgePrepMs": 441.29204100000004,
+        "lines": 672164,
+        "readbackMs": 59.284957999999996,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 580.714584,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 581.739833
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 685.1812090000003,
+    "wallMs": 608.8040420000001,
+    "cpuMs": 705.532,
+    "baselineRssMiB": 48.921875,
+    "peakRssMiB": 101.6875,
+    "maxRssMiB": 101.6875,
+    "loopP99Ms": 6.021119,
+    "loopMaxMs": 6.332415,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 67.226917,
+        "indexMs": 29.106334000000004,
+        "judgePrepMs": 480.343791,
+        "readbackMs": 30.23304200000007,
+        "totalMs": 608.669083,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 837.0943749999988,
+    "wallMs": 661.0916669999999,
+    "cpuMs": 838.427,
+    "baselineRssMiB": 89.390625,
+    "peakRssMiB": 215.296875,
+    "maxRssMiB": 215.3125,
+    "loopP99Ms": 5.984255,
+    "loopMaxMs": 5.996543,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 68.99908299999998,
+        "indexMs": 33.111041,
+        "judgePrepMs": 525.6650000000001,
+        "readbackMs": 30.957417000000078,
+        "totalMs": 660.9183330000001,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 696.7162090000002,
+    "wallMs": 620.316667,
+    "cpuMs": 718.498,
+    "baselineRssMiB": 48.921875,
+    "peakRssMiB": 102.21875,
+    "maxRssMiB": 102.21875,
+    "loopP99Ms": 6.041599,
+    "loopMaxMs": 6.950911,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 67.61108300000001,
+        "indexMs": 30.845874999999992,
+        "judgePrepMs": 487.859292,
+        "readbackMs": 31.78720899999996,
+        "totalMs": 620.167958,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 841.5673339999994,
+    "wallMs": 668.2458750000001,
+    "cpuMs": 843.307,
+    "baselineRssMiB": 90.453125,
+    "peakRssMiB": 214.078125,
+    "maxRssMiB": 214.078125,
+    "loopP99Ms": 5.705727,
+    "loopMaxMs": 5.976063,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 70.01933300000002,
+        "indexMs": 33.344458,
+        "judgePrepMs": 531.522209,
+        "readbackMs": 30.70641599999999,
+        "totalMs": 668.109708,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 598.5645829999994,
+    "maxRssMiB": 3.015625,
+    "results": [
+      {
+        "captureMs": 73.200667,
+        "chunks": 12683,
+        "indexMs": 19.52825,
+        "judgePrepMs": 441.577375,
+        "lines": 672164,
+        "readbackMs": 58.792875,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 593.257084,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 595.636291
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 834.5147919999999,
+    "wallMs": 664.493833,
+    "cpuMs": 842.275,
+    "baselineRssMiB": 85.828125,
+    "peakRssMiB": 218.25,
+    "maxRssMiB": 218.25,
+    "loopP99Ms": 5.865471,
+    "loopMaxMs": 6.082559,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 74.003375,
+        "indexMs": 30.684292,
+        "judgePrepMs": 526.1488750000001,
+        "readbackMs": 31.551707999999962,
+        "totalMs": 664.3618749999999,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 577.4829170000012,
+    "maxRssMiB": 3.015625,
+    "results": [
+      {
+        "captureMs": 57.16475,
+        "chunks": 12683,
+        "indexMs": 19.617417000000003,
+        "judgePrepMs": 438.68712500000004,
+        "lines": 672164,
+        "readbackMs": 58.549167,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 574.172667,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 575.084917
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 695.9631669999999,
+    "wallMs": 620.0657080000001,
+    "cpuMs": 719.32,
+    "baselineRssMiB": 48.9375,
+    "peakRssMiB": 101.765625,
+    "maxRssMiB": 101.765625,
+    "loopP99Ms": 5.738495,
+    "loopMaxMs": 5.849087,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 67.698041,
+        "indexMs": 28.65033299999999,
+        "judgePrepMs": 490.71404099999995,
+        "readbackMs": 31.06016599999998,
+        "totalMs": 619.921,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 343.44633299999987,
+    "wallMs": 264.093042,
+    "cpuMs": 312.72,
+    "baselineRssMiB": 48.84375,
+    "peakRssMiB": 97.84375,
+    "maxRssMiB": 97.84375,
+    "loopP99Ms": 5.869567,
+    "loopMaxMs": 6.643711,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 44.279292000000005,
+        "indexMs": 11.630958000000007,
+        "judgePrepMs": 198.5645,
+        "readbackMs": 8.306249999999977,
+        "totalMs": 263.591334,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.044875000000005,
+        "indexMs": 11.664792000000006,
+        "judgePrepMs": 198.58612499999998,
+        "readbackMs": 8.580290999999988,
+        "totalMs": 261.79224999999997,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.343458,
+        "indexMs": 11.825500000000005,
+        "judgePrepMs": 198.747167,
+        "readbackMs": 8.382666000000029,
+        "totalMs": 260.8355,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.291166999999994,
+        "indexMs": 11.596041999999997,
+        "judgePrepMs": 198.612375,
+        "readbackMs": 8.382625000000019,
+        "totalMs": 260.826583,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 456.17904100000123,
+    "wallMs": 286.05762500000003,
+    "cpuMs": 361.102,
+    "baselineRssMiB": 89.265625,
+    "peakRssMiB": 143.671875,
+    "maxRssMiB": 143.671875,
+    "loopP99Ms": 5.976063,
+    "loopMaxMs": 6.025215,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 44.39891699999998,
+        "indexMs": 14.429500000000019,
+        "judgePrepMs": 211.05595800000003,
+        "readbackMs": 7.87579199999999,
+        "totalMs": 285.882417,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.55195900000001,
+        "indexMs": 14.339500000000015,
+        "judgePrepMs": 211.302125,
+        "readbackMs": 7.766083999999978,
+        "totalMs": 280.40325,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.265000000000015,
+        "indexMs": 16.377999999999986,
+        "judgePrepMs": 210.397375,
+        "readbackMs": 7.86062499999997,
+        "totalMs": 280.269666,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.450917000000004,
+        "indexMs": 14.582583999999997,
+        "judgePrepMs": 213.284791,
+        "readbackMs": 7.961667000000034,
+        "totalMs": 279.773958,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 225.2926660000012,
+    "maxRssMiB": 3.703125,
+    "results": [
+      {
+        "captureMs": 36.959125,
+        "chunks": 1269,
+        "indexMs": 4.811667000000001,
+        "judgePrepMs": 163.35970799999998,
+        "lines": 67216,
+        "readbackMs": 17.229625,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 222.641917,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.829834,
+        "chunks": 1269,
+        "indexMs": 4.766334,
+        "judgePrepMs": 163.349417,
+        "lines": 67216,
+        "readbackMs": 17.236667,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 222.50025000000002,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.801874999999995,
+        "chunks": 1269,
+        "indexMs": 4.670208000000001,
+        "judgePrepMs": 163.339542,
+        "lines": 67216,
+        "readbackMs": 17.242209000000003,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 222.432041,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.730291,
+        "chunks": 1269,
+        "indexMs": 4.6174170000000005,
+        "judgePrepMs": 163.26179199999999,
+        "lines": 67216,
+        "readbackMs": 17.239459,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 221.95483299999998,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 222.87379099999998
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 457.97049999999945,
+    "wallMs": 286.328416,
+    "cpuMs": 366.353,
+    "baselineRssMiB": 89.328125,
+    "peakRssMiB": 146.5625,
+    "maxRssMiB": 146.5625,
+    "loopP99Ms": 6.098943,
+    "loopMaxMs": 6.246399,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 44.64666600000001,
+        "indexMs": 13.530457999999982,
+        "judgePrepMs": 215.495917,
+        "readbackMs": 9.089083000000016,
+        "totalMs": 286.00704099999996,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.706875,
+        "indexMs": 13.465291999999977,
+        "judgePrepMs": 215.74487499999998,
+        "readbackMs": 9.019124999999974,
+        "totalMs": 283.8355,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.89795799999999,
+        "indexMs": 13.694625000000002,
+        "judgePrepMs": 217.900792,
+        "readbackMs": 9.082167000000027,
+        "totalMs": 283.144458,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.847166999999985,
+        "indexMs": 18.963167,
+        "judgePrepMs": 212.97875,
+        "readbackMs": 8.103250000000003,
+        "totalMs": 283.30725,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 222.3824999999997,
+    "maxRssMiB": 3.84375,
+    "results": [
+      {
+        "captureMs": 37.030166,
+        "chunks": 1269,
+        "indexMs": 4.5872079999999995,
+        "judgePrepMs": 157.26125,
+        "lines": 67216,
+        "readbackMs": 19.920875000000002,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 218.96075000000002,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.692665999999996,
+        "chunks": 1269,
+        "indexMs": 4.738291,
+        "judgePrepMs": 157.25104100000001,
+        "lines": 67216,
+        "readbackMs": 19.929125,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 218.954375,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 37.045458,
+        "chunks": 1269,
+        "indexMs": 7.437125,
+        "judgePrepMs": 157.02266600000002,
+        "lines": 67216,
+        "readbackMs": 17.686500000000002,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 219.37879199999998,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.817207999999994,
+        "chunks": 1269,
+        "indexMs": 7.225582999999999,
+        "judgePrepMs": 157.278167,
+        "lines": 67216,
+        "readbackMs": 17.708166000000002,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 219.121666,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 219.878458
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 342.5714169999992,
+    "wallMs": 266.763333,
+    "cpuMs": 317.749,
+    "baselineRssMiB": 48.90625,
+    "peakRssMiB": 93.65625,
+    "maxRssMiB": 93.65625,
+    "loopP99Ms": 5.951487,
+    "loopMaxMs": 6.553599,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 44.871833,
+        "indexMs": 12.300458000000006,
+        "judgePrepMs": 199.91054200000002,
+        "readbackMs": 8.468958000000043,
+        "totalMs": 266.13025000000005,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.495082999999994,
+        "indexMs": 12.639499999999998,
+        "judgePrepMs": 199.893542,
+        "readbackMs": 8.403832999999963,
+        "totalMs": 264.37125,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.349791,
+        "indexMs": 12.295583000000008,
+        "judgePrepMs": 199.93350000000004,
+        "readbackMs": 8.47399999999999,
+        "totalMs": 263.754541,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.876915999999994,
+        "indexMs": 12.330292,
+        "judgePrepMs": 200.06287500000002,
+        "readbackMs": 8.482582999999977,
+        "totalMs": 263.756083,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 223.78704199999993,
+    "maxRssMiB": 3.765625,
+    "results": [
+      {
+        "captureMs": 36.61275,
+        "chunks": 1269,
+        "indexMs": 4.926792,
+        "judgePrepMs": 158.50829199999998,
+        "lines": 67216,
+        "readbackMs": 20.425167000000002,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 220.63066700000002,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.923958,
+        "chunks": 1269,
+        "indexMs": 5.820917,
+        "judgePrepMs": 160.621542,
+        "lines": 67216,
+        "readbackMs": 17.54975,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 221.00245800000002,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.859333,
+        "chunks": 1269,
+        "indexMs": 6.0625,
+        "judgePrepMs": 160.484042,
+        "lines": 67216,
+        "readbackMs": 17.424,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 220.946958,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 36.507375,
+        "chunks": 1269,
+        "indexMs": 5.987458,
+        "judgePrepMs": 160.7205,
+        "lines": 67216,
+        "readbackMs": 17.451500000000003,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 220.883833,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 221.546333
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 340.4818749999977,
+    "wallMs": 264.937458,
+    "cpuMs": 315.75,
+    "baselineRssMiB": 48.78125,
+    "peakRssMiB": 93.359375,
+    "maxRssMiB": 93.359375,
+    "loopP99Ms": 5.754879,
+    "loopMaxMs": 7.479295,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 44.094916999999995,
+        "indexMs": 12.054709000000003,
+        "judgePrepMs": 199.31262499999997,
+        "readbackMs": 8.256541000000027,
+        "totalMs": 264.549375,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.10025,
+        "indexMs": 12.046875,
+        "judgePrepMs": 199.35566599999999,
+        "readbackMs": 8.338208000000009,
+        "totalMs": 262.72725,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.42524999999999,
+        "indexMs": 12.258707999999999,
+        "judgePrepMs": 199.49208299999998,
+        "readbackMs": 8.357582999999977,
+        "totalMs": 262.101666,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.252458999999995,
+        "indexMs": 12.186541999999989,
+        "judgePrepMs": 199.33175,
+        "readbackMs": 8.339791999999989,
+        "totalMs": 262.10616699999997,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 457.2822500000002,
+    "wallMs": 286.153208,
+    "cpuMs": 365.223,
+    "baselineRssMiB": 86.140625,
+    "peakRssMiB": 150.296875,
+    "maxRssMiB": 150.296875,
+    "loopP99Ms": 6.017023,
+    "loopMaxMs": 6.594559,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 44.173249999999996,
+        "indexMs": 13.54879200000002,
+        "judgePrepMs": 218.85491699999997,
+        "readbackMs": 8.587249999999983,
+        "totalMs": 285.884542,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.74058400000001,
+        "indexMs": 17.171583,
+        "judgePrepMs": 215.082416,
+        "readbackMs": 8.135832999999991,
+        "totalMs": 284.276,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.298666999999995,
+        "indexMs": 13.409500000000008,
+        "judgePrepMs": 216.841959,
+        "readbackMs": 8.413917000000026,
+        "totalMs": 283.607583,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.747457999999995,
+        "indexMs": 13.479875000000021,
+        "judgePrepMs": 216.93308399999998,
+        "readbackMs": 8.530541999999969,
+        "totalMs": 283.0415,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 342.05699999999706,
+    "wallMs": 266.73120800000004,
+    "cpuMs": 314.23,
+    "baselineRssMiB": 48.84375,
+    "peakRssMiB": 93.859375,
+    "maxRssMiB": 93.859375,
+    "loopP99Ms": 5.828607,
+    "loopMaxMs": 5.947391,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 44.4125,
+        "indexMs": 11.673000000000002,
+        "judgePrepMs": 201.12308299999998,
+        "readbackMs": 8.359167000000014,
+        "totalMs": 266.133,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.448916,
+        "indexMs": 11.614415999999991,
+        "judgePrepMs": 201.01829200000003,
+        "readbackMs": 8.22829200000001,
+        "totalMs": 264.266875,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.021041,
+        "indexMs": 11.623125000000002,
+        "judgePrepMs": 200.99891699999998,
+        "readbackMs": 8.324584000000016,
+        "totalMs": 263.6875,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 41.732625,
+        "indexMs": 11.567833000000007,
+        "judgePrepMs": 200.96529100000004,
+        "readbackMs": 8.31733300000002,
+        "totalMs": 263.65374999999995,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 468.25074999999924,
+    "wallMs": 294.62145899999996,
+    "cpuMs": 371.847,
+    "baselineRssMiB": 89.359375,
+    "peakRssMiB": 148.796875,
+    "maxRssMiB": 148.796875,
+    "loopP99Ms": 6.356991,
+    "loopMaxMs": 7.204863,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 49.85829100000001,
+        "indexMs": 13.454083000000026,
+        "judgePrepMs": 219.32620800000004,
+        "readbackMs": 8.306709000000012,
+        "totalMs": 293.989208,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 48.1155,
+        "indexMs": 13.444500000000005,
+        "judgePrepMs": 219.57137500000002,
+        "readbackMs": 8.253375000000005,
+        "totalMs": 292.763375,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 47.45112500000002,
+        "indexMs": 13.609000000000009,
+        "judgePrepMs": 221.742875,
+        "readbackMs": 8.329958999999974,
+        "totalMs": 291.72950000000003,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 47.404584,
+        "indexMs": 13.476708000000002,
+        "judgePrepMs": 219.17458299999998,
+        "readbackMs": 8.298332999999957,
+        "totalMs": 291.730709,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 226.78008300000147,
+    "maxRssMiB": 3.703125,
+    "results": [
+      {
+        "captureMs": 40.721167,
+        "chunks": 1269,
+        "indexMs": 4.726916999999999,
+        "judgePrepMs": 153.63954099999998,
+        "lines": 67216,
+        "readbackMs": 22.822374999999997,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 222.06062500000002,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 40.697958,
+        "chunks": 1269,
+        "indexMs": 5.8325,
+        "judgePrepMs": 155.934084,
+        "lines": 67216,
+        "readbackMs": 19.981709,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 222.528667,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 40.805541,
+        "chunks": 1269,
+        "indexMs": 7.712959000000001,
+        "judgePrepMs": 156.063917,
+        "lines": 67216,
+        "readbackMs": 18.122374999999998,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 222.779416,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 40.936209,
+        "chunks": 1269,
+        "indexMs": 10.112542000000001,
+        "judgePrepMs": 154.662125,
+        "lines": 67216,
+        "readbackMs": 17.303542,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 223.081375,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 223.84937499999998
+  },
+  {
+    "variant": "effect",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 460.16483399999925,
+    "wallMs": 288.444459,
+    "cpuMs": 377.117,
+    "baselineRssMiB": 85.765625,
+    "peakRssMiB": 167.359375,
+    "maxRssMiB": 167.359375,
+    "loopP99Ms": 5.869567,
+    "loopMaxMs": 6.307839,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 48.190583000000004,
+        "indexMs": 11.565875000000005,
+        "judgePrepMs": 218.880083,
+        "readbackMs": 8.495458999999983,
+        "totalMs": 288.10083299999997,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 46.34016700000001,
+        "indexMs": 14.686042000000015,
+        "judgePrepMs": 215.769084,
+        "readbackMs": 8.091707999999983,
+        "totalMs": 286.47616700000003,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 45.582291,
+        "indexMs": 14.177290999999997,
+        "judgePrepMs": 216.39412499999997,
+        "readbackMs": 8.037082999999996,
+        "totalMs": 285.64712499999996,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 45.51441700000001,
+        "indexMs": 11.707041000000004,
+        "judgePrepMs": 217.111875,
+        "readbackMs": 8.194749999999999,
+        "totalMs": 285.006125,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 240.13662500000282,
+    "maxRssMiB": 3.890625,
+    "results": [
+      {
+        "captureMs": 39.177875,
+        "chunks": 1269,
+        "indexMs": 4.551417000000001,
+        "judgePrepMs": 141.25887500000002,
+        "lines": 67216,
+        "readbackMs": 47.322583,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 232.582917,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 41.47675,
+        "chunks": 1269,
+        "indexMs": 46.006208,
+        "judgePrepMs": 134.943708,
+        "lines": 67216,
+        "readbackMs": 14.527625,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 237.05525,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 38.889166,
+        "chunks": 1269,
+        "indexMs": 5.107709,
+        "judgePrepMs": 161.78229199999998,
+        "lines": 67216,
+        "readbackMs": 28.943917,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 234.84074999999999,
+        "wireMiB": 15.197273254394531
+      },
+      {
+        "captureMs": 39.159292,
+        "chunks": 1269,
+        "indexMs": 6.361291,
+        "judgePrepMs": 161.722167,
+        "lines": 67216,
+        "readbackMs": 27.67275,
+        "selectedMiB": 2.0027847290039062,
+        "sizeMiB": 10,
+        "totalMs": 234.99487499999998,
+        "wireMiB": 15.197273254394531
+      }
+    ],
+    "wallMs": 237.548542
+  },
+  {
+    "variant": "native",
+    "size": 10,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 346.0336669999997,
+    "wallMs": 269.44966600000004,
+    "cpuMs": 318.657,
+    "baselineRssMiB": 48.90625,
+    "peakRssMiB": 93.953125,
+    "maxRssMiB": 93.953125,
+    "loopP99Ms": 5.730303,
+    "loopMaxMs": 6.103039,
+    "results": [
+      {
+        "sizeMiB": 10,
+        "captureMs": 45.075709,
+        "indexMs": 12.511083999999997,
+        "judgePrepMs": 202.31958399999996,
+        "readbackMs": 8.454250000000002,
+        "totalMs": 268.88904199999996,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.723082999999995,
+        "indexMs": 12.676374999999993,
+        "judgePrepMs": 202.482708,
+        "readbackMs": 8.466124999999977,
+        "totalMs": 266.923542,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.476333000000004,
+        "indexMs": 12.58466700000001,
+        "judgePrepMs": 202.34537500000002,
+        "readbackMs": 8.457667000000015,
+        "totalMs": 266.622541,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      },
+      {
+        "sizeMiB": 10,
+        "captureMs": 42.13995800000001,
+        "indexMs": 12.621417000000008,
+        "judgePrepMs": 202.298417,
+        "readbackMs": 8.390166999999963,
+        "totalMs": 266.44291599999997,
+        "chunks": 1269,
+        "lines": 67216,
+        "wireMiB": 15.197273254394531,
+        "selectedMiB": 2.0027847290039062
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 2405.2603750000017,
+    "wallMs": 2322.863458,
+    "cpuMs": 2884.516,
+    "baselineRssMiB": 48.859375,
+    "peakRssMiB": 150.796875,
+    "maxRssMiB": 150.796875,
+    "loopP99Ms": 5.713919,
+    "loopMaxMs": 6.553599,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 188.921333,
+        "indexMs": 89.817917,
+        "judgePrepMs": 1953.632875,
+        "readbackMs": 80.828708,
+        "totalMs": 2318.8725,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 186.957167,
+        "indexMs": 86.87470900000002,
+        "judgePrepMs": 1953.4631250000002,
+        "readbackMs": 83.49937500000033,
+        "totalMs": 2313.79275,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 186.6485,
+        "indexMs": 96.72954199999998,
+        "judgePrepMs": 1949.476125,
+        "readbackMs": 78.24675000000025,
+        "totalMs": 2320.172,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 186.30762499999997,
+        "indexMs": 91.077875,
+        "judgePrepMs": 1953.4707919999998,
+        "readbackMs": 79.44425000000001,
+        "totalMs": 2317.8636659999997,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 2581.8883749999986,
+    "wallMs": 2398.300375,
+    "cpuMs": 3137.06,
+    "baselineRssMiB": 86.34375,
+    "peakRssMiB": 244.140625,
+    "maxRssMiB": 244.140625,
+    "loopP99Ms": 5.668863,
+    "loopMaxMs": 5.926911,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 144.74691700000002,
+        "indexMs": 99.66000000000003,
+        "judgePrepMs": 2063.495625,
+        "readbackMs": 81.9747910000001,
+        "totalMs": 2396.422958,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 142.66225,
+        "indexMs": 108.85166699999996,
+        "judgePrepMs": 2057.192,
+        "readbackMs": 79.46154100000012,
+        "totalMs": 2396.375958,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 142.56875000000002,
+        "indexMs": 98.35170800000003,
+        "judgePrepMs": 2063.794209,
+        "readbackMs": 81.94841700000006,
+        "totalMs": 2392.274583,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 142.159125,
+        "indexMs": 95.21570799999995,
+        "judgePrepMs": 2066.449958,
+        "readbackMs": 82.13374999999996,
+        "totalMs": 2390.0655,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 0,
+    "processWallMs": 1972.8229580000007,
+    "maxRssMiB": 5.609375,
+    "results": [
+      {
+        "captureMs": 105.083,
+        "chunks": 12683,
+        "indexMs": 44.966499999999996,
+        "judgePrepMs": 1572.43825,
+        "lines": 672164,
+        "readbackMs": 229.398875,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1952.0515,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 106.974291,
+        "chunks": 12683,
+        "indexMs": 52.513167,
+        "judgePrepMs": 1575.7167920000002,
+        "lines": 672164,
+        "readbackMs": 219.48558300000002,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1954.851583,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 110.99520799999999,
+        "chunks": 12683,
+        "indexMs": 94.591792,
+        "judgePrepMs": 1579.0042500000002,
+        "lines": 672164,
+        "readbackMs": 177.543334,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1962.292875,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 111.530834,
+        "chunks": 12683,
+        "indexMs": 102.884291,
+        "judgePrepMs": 1579.403084,
+        "lines": 672164,
+        "readbackMs": 171.321292,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1965.238709,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 1967.907834
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 2677.9447499999987,
+    "wallMs": 2493.402792,
+    "cpuMs": 3179.641,
+    "baselineRssMiB": 89.265625,
+    "peakRssMiB": 240.828125,
+    "maxRssMiB": 240.828125,
+    "loopP99Ms": 5.750783,
+    "loopMaxMs": 6.488063,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 224.04587500000002,
+        "indexMs": 91.86737499999998,
+        "judgePrepMs": 2071.686833,
+        "readbackMs": 96.01770899999974,
+        "totalMs": 2487.8312499999997,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 222.49716700000002,
+        "indexMs": 87.79929199999998,
+        "judgePrepMs": 2073.7250830000003,
+        "readbackMs": 96.09487499999977,
+        "totalMs": 2483.5153750000004,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 224.99062500000002,
+        "indexMs": 104.328958,
+        "judgePrepMs": 2069.5483329999997,
+        "readbackMs": 86.5753749999999,
+        "totalMs": 2490.8785,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 224.52024999999998,
+        "indexMs": 104.73487499999999,
+        "judgePrepMs": 2069.230333,
+        "readbackMs": 86.52191700000003,
+        "totalMs": 2488.138375,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 1978.958208,
+    "maxRssMiB": 5.890625,
+    "results": [
+      {
+        "captureMs": 107.53358300000001,
+        "chunks": 12683,
+        "indexMs": 43.609750000000005,
+        "judgePrepMs": 1547.425042,
+        "lines": 672164,
+        "readbackMs": 254.580875,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1953.316,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 110.87066700000001,
+        "chunks": 12683,
+        "indexMs": 59.207708,
+        "judgePrepMs": 1580.14025,
+        "lines": 672164,
+        "readbackMs": 210.876708,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1961.250417,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 112.14766599999999,
+        "chunks": 12683,
+        "indexMs": 76.56012500000001,
+        "judgePrepMs": 1581.9830000000002,
+        "lines": 672164,
+        "readbackMs": 194.76016700000002,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1965.598666,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 116.632667,
+        "chunks": 12683,
+        "indexMs": 142.23649999999998,
+        "judgePrepMs": 1544.894916,
+        "lines": 672164,
+        "readbackMs": 168.094167,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1972.0031250000002,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 1974.7327500000001
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 1,
+    "processWallMs": 2338.639625,
+    "wallMs": 2252.287416,
+    "cpuMs": 2778.754,
+    "baselineRssMiB": 48.859375,
+    "peakRssMiB": 147.671875,
+    "maxRssMiB": 147.671875,
+    "loopP99Ms": 5.709823,
+    "loopMaxMs": 7.331839,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 127.13824999999999,
+        "indexMs": 85.49224999999998,
+        "judgePrepMs": 1957.030875,
+        "readbackMs": 76.32408299999997,
+        "totalMs": 2252.155542,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 124.994792,
+        "indexMs": 81.314167,
+        "judgePrepMs": 1960.4944999999998,
+        "readbackMs": 76.789041,
+        "totalMs": 2246.181208,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 124.83758300000001,
+        "indexMs": 81.33299999999997,
+        "judgePrepMs": 1960.492459,
+        "readbackMs": 76.56662499999993,
+        "totalMs": 2248.336792,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 124.40787500000002,
+        "indexMs": 85.41091699999998,
+        "judgePrepMs": 1957.0561659999998,
+        "readbackMs": 76.24833400000034,
+        "totalMs": 2246.483209,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 1963.9328749999986,
+    "maxRssMiB": 5.515625,
+    "results": [
+      {
+        "captureMs": 102.927583,
+        "chunks": 12683,
+        "indexMs": 46.81275,
+        "judgePrepMs": 1559.155583,
+        "lines": 672164,
+        "readbackMs": 237.91075,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1947.021542,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 105.78825,
+        "chunks": 12683,
+        "indexMs": 60.915833,
+        "judgePrepMs": 1587.134625,
+        "lines": 672164,
+        "readbackMs": 199.97458400000002,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1953.9728750000002,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 110.18441700000001,
+        "chunks": 12683,
+        "indexMs": 74.031542,
+        "judgePrepMs": 1588.44875,
+        "lines": 672164,
+        "readbackMs": 184.348292,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1957.163125,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 112.29074999999999,
+        "chunks": 12683,
+        "indexMs": 110.694167,
+        "judgePrepMs": 1567.00325,
+        "lines": 672164,
+        "readbackMs": 170.078792,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1960.176167,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 1961.5277500000002
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 2330.3907499999987,
+    "wallMs": 2248.0963340000003,
+    "cpuMs": 2799.555,
+    "baselineRssMiB": 48.78125,
+    "peakRssMiB": 149.859375,
+    "maxRssMiB": 149.859375,
+    "loopP99Ms": 5.697535,
+    "loopMaxMs": 6.660095,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 132.224375,
+        "indexMs": 85.997041,
+        "judgePrepMs": 1941.807709,
+        "readbackMs": 80.54870800000026,
+        "totalMs": 2242.931375,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 130.490959,
+        "indexMs": 93.78883400000001,
+        "judgePrepMs": 1941.5269589999998,
+        "readbackMs": 73.05025000000023,
+        "totalMs": 2245.968917,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 129.662416,
+        "indexMs": 100.79508299999998,
+        "judgePrepMs": 1935.888125,
+        "readbackMs": 72.04399999999987,
+        "totalMs": 2243.842958,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 129.648166,
+        "indexMs": 92.487166,
+        "judgePrepMs": 1942.176167,
+        "readbackMs": 73.69033299999955,
+        "totalMs": 2241.881375,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 2,
+    "processWallMs": 2568.833583000007,
+    "wallMs": 2377.95975,
+    "cpuMs": 3125.468,
+    "baselineRssMiB": 86.75,
+    "peakRssMiB": 242.71875,
+    "maxRssMiB": 242.71875,
+    "loopP99Ms": 5.709823,
+    "loopMaxMs": 6.627327,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 145.226667,
+        "indexMs": 112.21641700000004,
+        "judgePrepMs": 2037.431333,
+        "readbackMs": 78.01108299999987,
+        "totalMs": 2377.785917,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 140.902625,
+        "indexMs": 104.75074999999998,
+        "judgePrepMs": 2044.3824170000003,
+        "readbackMs": 78.87470800000028,
+        "totalMs": 2373.649417,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 142.920042,
+        "indexMs": 98.121667,
+        "judgePrepMs": 2045.4220840000003,
+        "readbackMs": 81.32808299999988,
+        "totalMs": 2371.3721250000003,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 139.830833,
+        "indexMs": 92.616083,
+        "judgePrepMs": 2049.588041,
+        "readbackMs": 83.87966700000015,
+        "totalMs": 2368.976208,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 2320.7994590000017,
+    "wallMs": 2233.257208,
+    "cpuMs": 2772.255,
+    "baselineRssMiB": 48.828125,
+    "peakRssMiB": 150.640625,
+    "maxRssMiB": 150.640625,
+    "loopP99Ms": 5.685247,
+    "loopMaxMs": 6.303743,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 125.207167,
+        "indexMs": 81.54450000000003,
+        "judgePrepMs": 1941.7437080000002,
+        "readbackMs": 78.28479100000004,
+        "totalMs": 2231.352375,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 126.077708,
+        "indexMs": 99.42287499999998,
+        "judgePrepMs": 1928.007167,
+        "readbackMs": 72.15824999999995,
+        "totalMs": 2231.108208,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 122.36670799999999,
+        "indexMs": 81.75004099999998,
+        "judgePrepMs": 1941.6628749999998,
+        "readbackMs": 78.22762499999999,
+        "totalMs": 2226.493791,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 122.39849999999998,
+        "indexMs": 80.96508400000002,
+        "judgePrepMs": 1941.8477079999998,
+        "readbackMs": 78.40970900000002,
+        "totalMs": 2227.3582499999998,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 2548.6610419999997,
+    "wallMs": 2373.471709,
+    "cpuMs": 3093.842,
+    "baselineRssMiB": 85.96875,
+    "peakRssMiB": 243.84375,
+    "maxRssMiB": 244.34375,
+    "loopP99Ms": 5.763071,
+    "loopMaxMs": 7.548927,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 141.656541,
+        "indexMs": 86.21341699999999,
+        "judgePrepMs": 2055.914917,
+        "readbackMs": 82.597667,
+        "totalMs": 2368.512666,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 139.339708,
+        "indexMs": 96.94287500000002,
+        "judgePrepMs": 2049.842208,
+        "readbackMs": 79.74062499999991,
+        "totalMs": 2368.794458,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 138.178958,
+        "indexMs": 87.73795800000005,
+        "judgePrepMs": 2053.864708,
+        "readbackMs": 82.1278339999999,
+        "totalMs": 2370.756708,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 141.48045899999997,
+        "indexMs": 95.18420900000001,
+        "judgePrepMs": 2049.052375,
+        "readbackMs": 79.17704099999992,
+        "totalMs": 2368.494334,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 3,
+    "processWallMs": 1942.4221249999973,
+    "maxRssMiB": 5.640625,
+    "results": [
+      {
+        "captureMs": 105.317709,
+        "chunks": 12683,
+        "indexMs": 43.228500000000004,
+        "judgePrepMs": 1535.338541,
+        "lines": 672164,
+        "readbackMs": 237.286833,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1921.386625,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 105.580708,
+        "chunks": 12683,
+        "indexMs": 46.348291,
+        "judgePrepMs": 1552.7762919999998,
+        "lines": 672164,
+        "readbackMs": 220.216083,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1925.0680409999998,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 109.75058299999999,
+        "chunks": 12683,
+        "indexMs": 91.264083,
+        "judgePrepMs": 1556.506792,
+        "lines": 672164,
+        "readbackMs": 174.782083,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1932.4531660000002,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 110.52616599999999,
+        "chunks": 12683,
+        "indexMs": 105.30487500000001,
+        "judgePrepMs": 1548.6852500000002,
+        "lines": 672164,
+        "readbackMs": 169.784458,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1934.419791,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 1936.203
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 2534.8835000000036,
+    "wallMs": 2360.496584,
+    "cpuMs": 3088.61,
+    "baselineRssMiB": 89.375,
+    "peakRssMiB": 244.28125,
+    "maxRssMiB": 244.515625,
+    "loopP99Ms": 5.685247,
+    "loopMaxMs": 5.984255,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 137.627667,
+        "indexMs": 93.03054100000003,
+        "judgePrepMs": 2043.4571660000001,
+        "readbackMs": 75.61974999999984,
+        "totalMs": 2360.3136250000002,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 134.77495800000003,
+        "indexMs": 86.59379200000001,
+        "judgePrepMs": 2047.705,
+        "readbackMs": 78.80258300000014,
+        "totalMs": 2352.333583,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 134.59320900000003,
+        "indexMs": 91.828667,
+        "judgePrepMs": 2044.6802080000002,
+        "readbackMs": 76.21429100000023,
+        "totalMs": 2354.0505,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 135.02370900000003,
+        "indexMs": 90.20095800000001,
+        "judgePrepMs": 2045.143709,
+        "readbackMs": 76.26508400000012,
+        "totalMs": 2355.652792,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 1975.6799580000006,
+    "maxRssMiB": 5.6875,
+    "results": [
+      {
+        "captureMs": 99.08324999999999,
+        "chunks": 12683,
+        "indexMs": 44.201209,
+        "judgePrepMs": 1569.663875,
+        "lines": 672164,
+        "readbackMs": 244.002333,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1957.118292,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 100.152083,
+        "chunks": 12683,
+        "indexMs": 50.649083,
+        "judgePrepMs": 1582.4973340000001,
+        "lines": 672164,
+        "readbackMs": 227.57791699999999,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1961.0700410000002,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 103.54270799999999,
+        "chunks": 12683,
+        "indexMs": 93.464166,
+        "judgePrepMs": 1584.250125,
+        "lines": 672164,
+        "readbackMs": 186.050541,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1967.479375,
+        "wireMiB": 152.00503158569336
+      },
+      {
+        "captureMs": 106.175792,
+        "chunks": 12683,
+        "indexMs": 139.373083,
+        "judgePrepMs": 1558.121041,
+        "lines": 672164,
+        "readbackMs": 167.492167,
+        "selectedMiB": 20.004192352294922,
+        "sizeMiB": 100,
+        "totalMs": 1971.272958,
+        "wireMiB": 152.00503158569336
+      }
+    ],
+    "wallMs": 1973.0738749999998
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 4,
+    "long": false,
+    "repeat": 4,
+    "processWallMs": 2319.162624999997,
+    "wallMs": 2238.597625,
+    "cpuMs": 2762.757,
+    "baselineRssMiB": 48.875,
+    "peakRssMiB": 148.890625,
+    "maxRssMiB": 148.890625,
+    "loopP99Ms": 5.754879,
+    "loopMaxMs": 6.844415,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 129.28108400000002,
+        "indexMs": 80.109916,
+        "judgePrepMs": 1948.095084,
+        "readbackMs": 71.57108299999982,
+        "totalMs": 2233.341042,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 127.04400000000001,
+        "indexMs": 79.374,
+        "judgePrepMs": 1951.025042,
+        "readbackMs": 72.26916699999992,
+        "totalMs": 2234.12275,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 126.85987499999999,
+        "indexMs": 85.84033300000002,
+        "judgePrepMs": 1945.590792,
+        "readbackMs": 71.01600000000008,
+        "totalMs": 2236.003083,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      },
+      {
+        "sizeMiB": 100,
+        "captureMs": 126.44879099999999,
+        "indexMs": 79.50429199999999,
+        "judgePrepMs": 1951.1665000000003,
+        "readbackMs": 71.90383299999985,
+        "totalMs": 2231.814333,
+        "chunks": 12683,
+        "lines": 672164,
+        "wireMiB": 152.00503158569336,
+        "selectedMiB": 20.004192352294922
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 0,
+    "processWallMs": 590.0144999999975,
+    "wallMs": 506.769708,
+    "cpuMs": 587.056,
+    "baselineRssMiB": 48.234375,
+    "peakRssMiB": 101.8125,
+    "maxRssMiB": 101.8125,
+    "loopP99Ms": 6.529023,
+    "loopMaxMs": 8.048639,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 64.91175,
+        "indexMs": 25.568583999999987,
+        "judgePrepMs": 385.8275,
+        "readbackMs": 28.420084000000088,
+        "totalMs": 506.61237499999993,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 0,
+    "processWallMs": 747.2459999999992,
+    "wallMs": 574.471,
+    "cpuMs": 705.68,
+    "baselineRssMiB": 87,
+    "peakRssMiB": 216.96875,
+    "maxRssMiB": 216.96875,
+    "loopP99Ms": 5.718015,
+    "loopMaxMs": 5.943295,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 86.162083,
+        "indexMs": 33.85100000000003,
+        "judgePrepMs": 424.44599999999997,
+        "readbackMs": 28.02154100000007,
+        "totalMs": 574.3362500000001,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 0,
+    "processWallMs": 549.1027920000051,
+    "maxRssMiB": 2.9375,
+    "results": [
+      {
+        "captureMs": 80.646708,
+        "chunks": 11200,
+        "indexMs": 17.130667,
+        "judgePrepMs": 391.391166,
+        "lines": 0,
+        "readbackMs": 55.940708,
+        "selectedMiB": 20,
+        "sizeMiB": 100,
+        "totalMs": 545.2586670000001,
+        "wireMiB": 145.06927490234375
+      }
+    ],
+    "wallMs": 546.5746660000001
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 1,
+    "processWallMs": 735.4413340000028,
+    "wallMs": 562.6739170000001,
+    "cpuMs": 692.347,
+    "baselineRssMiB": 87.109375,
+    "peakRssMiB": 208.6875,
+    "maxRssMiB": 208.6875,
+    "loopP99Ms": 6.127615,
+    "loopMaxMs": 6.254591,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 83.024125,
+        "indexMs": 29.818375000000003,
+        "judgePrepMs": 419.61233400000003,
+        "readbackMs": 28.194416000000047,
+        "totalMs": 562.493625,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 1,
+    "processWallMs": 550.9013330000016,
+    "maxRssMiB": 3.015625,
+    "results": [
+      {
+        "captureMs": 79.605916,
+        "chunks": 11200,
+        "indexMs": 17.475542,
+        "judgePrepMs": 390.946958,
+        "lines": 0,
+        "readbackMs": 58.170291,
+        "selectedMiB": 20,
+        "sizeMiB": 100,
+        "totalMs": 546.3645,
+        "wireMiB": 145.06927490234375
+      }
+    ],
+    "wallMs": 548.5640000000001
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 1,
+    "processWallMs": 607.0084999999963,
+    "wallMs": 527.9148749999999,
+    "cpuMs": 585.262,
+    "baselineRssMiB": 48.515625,
+    "peakRssMiB": 101.875,
+    "maxRssMiB": 101.875,
+    "loopP99Ms": 5.730303,
+    "loopMaxMs": 6.062079,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 85.084542,
+        "indexMs": 26.40145799999999,
+        "judgePrepMs": 385.336667,
+        "readbackMs": 28.71712500000001,
+        "totalMs": 527.750667,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 2,
+    "processWallMs": 597.114999999998,
+    "maxRssMiB": 3.0625,
+    "results": [
+      {
+        "captureMs": 66.885625,
+        "chunks": 11200,
+        "indexMs": 24.675584,
+        "judgePrepMs": 444.51708299999996,
+        "lines": 0,
+        "readbackMs": 56.523375,
+        "selectedMiB": 20,
+        "sizeMiB": 100,
+        "totalMs": 592.733166,
+        "wireMiB": 145.06927490234375
+      }
+    ],
+    "wallMs": 594.6175420000001
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 2,
+    "processWallMs": 609.1460000000006,
+    "wallMs": 530.600334,
+    "cpuMs": 596.106,
+    "baselineRssMiB": 48.3125,
+    "peakRssMiB": 102.15625,
+    "maxRssMiB": 102.15625,
+    "loopP99Ms": 6.287359,
+    "loopMaxMs": 6.516735,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 89.52875,
+        "indexMs": 26.208375000000018,
+        "judgePrepMs": 384.6045419999999,
+        "readbackMs": 28.245791999999938,
+        "totalMs": 530.444291,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 2,
+    "processWallMs": 737.5410839999968,
+    "wallMs": 564.6974170000001,
+    "cpuMs": 703.911,
+    "baselineRssMiB": 89.390625,
+    "peakRssMiB": 217.921875,
+    "maxRssMiB": 217.921875,
+    "loopP99Ms": 6.119423,
+    "loopMaxMs": 6.176767,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 83.72058299999998,
+        "indexMs": 28.79079200000001,
+        "judgePrepMs": 421.142791,
+        "readbackMs": 29.227209000000016,
+        "totalMs": 564.5240409999999,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 3,
+    "processWallMs": 580.4513339999976,
+    "wallMs": 503.906125,
+    "cpuMs": 580.401,
+    "baselineRssMiB": 48.375,
+    "peakRssMiB": 102.265625,
+    "maxRssMiB": 102.265625,
+    "loopP99Ms": 5.705727,
+    "loopMaxMs": 5.718015,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 65.184709,
+        "indexMs": 24.28141699999999,
+        "judgePrepMs": 382.452083,
+        "readbackMs": 30.01150000000007,
+        "totalMs": 503.745709,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 3,
+    "processWallMs": 781.6476670000047,
+    "wallMs": 590.7439159999999,
+    "cpuMs": 732.871,
+    "baselineRssMiB": 86.46875,
+    "peakRssMiB": 218.203125,
+    "maxRssMiB": 218.203125,
+    "loopP99Ms": 6.877183,
+    "loopMaxMs": 7.360511,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 90.58195800000001,
+        "indexMs": 33.823958000000005,
+        "judgePrepMs": 436.35724999999996,
+        "readbackMs": 28.214958000000024,
+        "totalMs": 590.5585,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 3,
+    "processWallMs": 531.2130830000024,
+    "maxRssMiB": 3,
+    "results": [
+      {
+        "captureMs": 59.877959000000004,
+        "chunks": 11200,
+        "indexMs": 17.416500000000003,
+        "judgePrepMs": 392.45208399999996,
+        "lines": 0,
+        "readbackMs": 56.254334,
+        "selectedMiB": 20,
+        "sizeMiB": 100,
+        "totalMs": 526.153917,
+        "wireMiB": 145.06927490234375
+      }
+    ],
+    "wallMs": 527.939375
+  },
+  {
+    "variant": "effect",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 4,
+    "processWallMs": 723.8185000000012,
+    "wallMs": 550.154084,
+    "cpuMs": 700.183,
+    "baselineRssMiB": 86.046875,
+    "peakRssMiB": 210.203125,
+    "maxRssMiB": 210.203125,
+    "loopP99Ms": 5.713919,
+    "loopMaxMs": 5.742591,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 68.511334,
+        "indexMs": 28.582166,
+        "judgePrepMs": 423.12783299999995,
+        "readbackMs": 27.814208000000008,
+        "totalMs": 549.988125,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  },
+  {
+    "variant": "rust",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 4,
+    "processWallMs": 521.5775409999987,
+    "maxRssMiB": 2.9375,
+    "results": [
+      {
+        "captureMs": 54.097958,
+        "chunks": 11200,
+        "indexMs": 17.915708,
+        "judgePrepMs": 389.96333300000003,
+        "lines": 0,
+        "readbackMs": 55.925125,
+        "selectedMiB": 20,
+        "sizeMiB": 100,
+        "totalMs": 518.05025,
+        "wireMiB": 145.06927490234375
+      }
+    ],
+    "wallMs": 519.3194159999999
+  },
+  {
+    "variant": "native",
+    "size": 100,
+    "concurrency": 1,
+    "long": true,
+    "repeat": 4,
+    "processWallMs": 593.046417000005,
+    "wallMs": 516.038667,
+    "cpuMs": 584.024,
+    "baselineRssMiB": 48.421875,
+    "peakRssMiB": 101.90625,
+    "maxRssMiB": 101.90625,
+    "loopP99Ms": 5.820415,
+    "loopMaxMs": 5.910527,
+    "results": [
+      {
+        "sizeMiB": 100,
+        "captureMs": 77.10974999999999,
+        "indexMs": 25.006166000000007,
+        "judgePrepMs": 383.656292,
+        "readbackMs": 28.240542000000005,
+        "totalMs": 515.890792,
+        "chunks": 11200,
+        "lines": 0,
+        "wireMiB": 145.06927490234375,
+        "selectedMiB": 20
+      }
+    ]
+  }
+]
