@@ -1,0 +1,56 @@
+{
+  "name": "sift-mcp",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "sift": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.eval.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "start": "node dist/cli.js",
+    "check": "npm run format:check && npm run typecheck && npm test && npm run build",
+    "smoke:live": "node --import tsx scripts/live-smoke.ts",
+    "format": "prettier --write src test scripts docs eval README.md package.json tsconfig.json tsconfig.eval.json .github/workflows/check.yml",
+    "format:check": "prettier --check src test scripts docs eval README.md package.json tsconfig.json tsconfig.eval.json .github/workflows/check.yml",
+    "eval:live": "node --import tsx scripts/evaluate-live.ts",
+    "smoke:mcp:live": "npm run build && node --import tsx scripts/live-mcp.ts",
+    "smoke:repository:live": "npm run build && node --import tsx scripts/live-mcp.ts --repository-test",
+    "eval:tasks:live": "npm run build && node --import tsx scripts/evaluate-tasks.ts",
+    "prepack": "npm run build",
+    "verify:package": "npm run build && node --import tsx scripts/verify-package.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@typesafe-ai/sdk": "0.6.0",
+    "effect": "3.22.2",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "prettier": "3.9.8",
+    "tsx": "4.23.13",
+    "typescript": "7.0.2"
+  },
+  "description": "Local MCP command-output filtering with purpose-aware evidence selection",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SingleMai/sift.git"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "files": [
+    "dist",
+    "docs/configuration.md",
+    "docs/preview.md",
+    "npm-shrinkwrap.json"
+  ]
+}

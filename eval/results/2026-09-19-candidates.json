@@ -1,0 +1,207 @@
+{
+  "recordedAt": "2026-09-19T04:18:04.607Z",
+  "model": "jev-latest",
+  "availableModels": [
+    {
+      "name": "jev-latest",
+      "description": "The latest iteration of TypeSafe's System One Model: Jev",
+      "release_date": "2026-09-10T18:38:01.391457+00:00"
+    },
+    {
+      "name": "jev-preview",
+      "description": "A preview version of `jev-latest`: should be better in most ways",
+      "release_date": "2026-09-10T18:39:06.057655+00:00"
+    }
+  ],
+  "fixture": "eval/cases.json",
+  "limitation": "16 assistant-authored synthetic expectations; development pilot, not independent human labels or held-out calibration.",
+  "durationMs": 2983.586375,
+  "inputTokens": 8991,
+  "outputTokens": 352,
+  "thresholds": [
+    {
+      "threshold": 0.5,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 8,
+      "precision": 1,
+      "recall": 1
+    },
+    {
+      "threshold": 0.6,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 8,
+      "precision": 1,
+      "recall": 1
+    },
+    {
+      "threshold": 0.7,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 8,
+      "precision": 1,
+      "recall": 1
+    },
+    {
+      "threshold": 0.8,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 8,
+      "precision": 1,
+      "recall": 1
+    },
+    {
+      "threshold": 0.9,
+      "tp": 7,
+      "fp": 0,
+      "fn": 1,
+      "tn": 8,
+      "precision": 1,
+      "recall": 0.875
+    },
+    {
+      "threshold": 0.95,
+      "tp": 4,
+      "fp": 0,
+      "fn": 4,
+      "tn": 8,
+      "precision": 1,
+      "recall": 0.5
+    }
+  ],
+  "rows": [
+    {
+      "id": "no-tests",
+      "expectedRelevant": true,
+      "probability": 0.95,
+      "inputTokens": 563,
+      "outputTokens": 22,
+      "durationMs": 1522.156583
+    },
+    {
+      "id": "zero-references",
+      "expectedRelevant": true,
+      "probability": 0.95,
+      "inputTokens": 560,
+      "outputTokens": 22,
+      "durationMs": 1473.851667
+    },
+    {
+      "id": "assertion",
+      "expectedRelevant": true,
+      "probability": 0.94,
+      "inputTokens": 560,
+      "outputTokens": 22,
+      "durationMs": 1837.4665420000001
+    },
+    {
+      "id": "stack-location",
+      "expectedRelevant": true,
+      "probability": 0.85,
+      "inputTokens": 595,
+      "outputTokens": 22,
+      "durationMs": 1686.9537500000001
+    },
+    {
+      "id": "timeout-setting",
+      "expectedRelevant": true,
+      "probability": 0.96,
+      "inputTokens": 560,
+      "outputTokens": 22,
+      "durationMs": 473.71179200000006
+    },
+    {
+      "id": "retry-limit",
+      "expectedRelevant": true,
+      "probability": 0.94,
+      "inputTokens": 552,
+      "outputTokens": 22,
+      "durationMs": 467.3352500000001
+    },
+    {
+      "id": "cache-performance",
+      "expectedRelevant": true,
+      "probability": 0.94,
+      "inputTokens": 555,
+      "outputTokens": 22,
+      "durationMs": 599.865041
+    },
+    {
+      "id": "chinese-no-tests",
+      "expectedRelevant": true,
+      "probability": 0.95,
+      "inputTokens": 588,
+      "outputTokens": 22,
+      "durationMs": 456.72312500000044
+    },
+    {
+      "id": "worker-banner",
+      "expectedRelevant": false,
+      "probability": 0.14,
+      "inputTokens": 549,
+      "outputTokens": 22,
+      "durationMs": 437.0464170000005
+    },
+    {
+      "id": "version-banner",
+      "expectedRelevant": false,
+      "probability": 0.04,
+      "inputTokens": 555,
+      "outputTokens": 22,
+      "durationMs": 418.45445800000016
+    },
+    {
+      "id": "cache-auth",
+      "expectedRelevant": false,
+      "probability": 0.03,
+      "inputTokens": 560,
+      "outputTokens": 22,
+      "durationMs": 274.9442079999999
+    },
+    {
+      "id": "neighbor-is-not-target",
+      "expectedRelevant": false,
+      "probability": 0.05,
+      "inputTokens": 563,
+      "outputTokens": 22,
+      "durationMs": 247.31745799999953
+    },
+    {
+      "id": "output-instruction",
+      "expectedRelevant": false,
+      "probability": 0.03,
+      "inputTokens": 569,
+      "outputTokens": 22,
+      "durationMs": 302.8531670000002
+    },
+    {
+      "id": "timestamp-only",
+      "expectedRelevant": false,
+      "probability": 0.02,
+      "inputTokens": 560,
+      "outputTokens": 22,
+      "durationMs": 567.0734160000002
+    },
+    {
+      "id": "documentation-footer",
+      "expectedRelevant": false,
+      "probability": 0.01,
+      "inputTokens": 548,
+      "outputTokens": 22,
+      "durationMs": 362.26550000000043
+    },
+    {
+      "id": "progress-only",
+      "expectedRelevant": false,
+      "probability": 0.05,
+      "inputTokens": 554,
+      "outputTokens": 22,
+      "durationMs": 271.72166600000037
+    }
+  ]
+}

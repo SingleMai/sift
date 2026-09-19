@@ -1,0 +1,92 @@
+{
+  "recordedAt": "2026-09-19T04:20:33.224Z",
+  "model": "jev-latest",
+  "threshold": 0.8,
+  "durationMs": 5928.96575,
+  "execution": {
+    "status": "exited",
+    "exitCode": 0,
+    "signal": null,
+    "bytes": {
+      "stdout": 5369,
+      "stderr": 0
+    },
+    "truncated": false,
+    "durationMs": 2357.4986670000003
+  },
+  "judgment": {
+    "complete": true,
+    "threshold": 0.8,
+    "counts": {
+      "kept": 4,
+      "filtered": 2,
+      "failed": 0,
+      "unprocessed": 0
+    },
+    "invalid_streams": [],
+    "requests": 6,
+    "reserved_input_bytes": 30818,
+    "usage": {
+      "inputTokens": 10072,
+      "outputTokens": 132
+    },
+    "issues": [],
+    "issues_truncated": false
+  },
+  "probabilities": [
+    {
+      "start": 0,
+      "end": 948,
+      "decision": {
+        "status": "judged",
+        "probability": 0.9
+      }
+    },
+    {
+      "start": 948,
+      "end": 1953,
+      "decision": {
+        "status": "judged",
+        "probability": 0.88
+      }
+    },
+    {
+      "start": 1953,
+      "end": 2908,
+      "decision": {
+        "status": "judged",
+        "probability": 0.79
+      }
+    },
+    {
+      "start": 2908,
+      "end": 3930,
+      "decision": {
+        "status": "judged",
+        "probability": 0.83
+      }
+    },
+    {
+      "start": 3930,
+      "end": 4887,
+      "decision": {
+        "status": "judged",
+        "probability": 0.7
+      }
+    },
+    {
+      "start": 4887,
+      "end": 5369,
+      "decision": {
+        "status": "judged",
+        "probability": 0.8
+      }
+    }
+  ],
+  "exactBackread": true,
+  "expectedEvidenceKept": true,
+  "summary": ["# tests 24", "# pass 24", "# fail 0"],
+  "capturedBytes": 5369,
+  "selectedBytes": 3457,
+  "limitations": "One real public-repository passing-test output; no failing-test task or broader calibration."
+}
