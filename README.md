@@ -2,11 +2,11 @@
 
 Command output, selected for your task.
 
-Sift is a planned local MCP tool that runs a command, retains its original output, and selects evidence relevant to the calling model's stated purpose before returning it to context.
+Sift is a local MCP tool that runs a command, retains its original output, and selects evidence relevant to the calling model's stated purpose before returning it to context.
 
-**Status: design and experiments. The MCP server and its tools are not implemented yet.**
+**Status: experimental first implementation.** The command pipeline, stdio MCP tools, Jev adapter, and deterministic contract tests are implemented. Real task-quality evaluation and threshold calibration are not complete.
 
-## Planned behavior
+## Behavior
 
 - `execute`: run a finite, non-interactive command with an explicit working directory and query purpose.
 - Store stdout and stderr locally; judge bounded source spans with neighboring context.
@@ -14,9 +14,20 @@ Sift is a planned local MCP tool that runs a command, retains its original outpu
 - `read_result`: retrieve bounded ranges of retained output when more context is needed.
 - Distinguish command failure, incomplete judgment, filtered spans, and truncated output.
 
-The chosen stack is Node.js, TypeScript, and Effect. The first judgment provider will be Jev, behind a replaceable interface. No API key is needed to run the local benchmarks.
+The stack is Node.js 24+, TypeScript, and Effect, initially supporting macOS/Linux. Jev is behind a replaceable judgment interface; command-specific chunk strategies have a separate extension interface. No API key is needed to run tests or local benchmarks.
 
-Sift will inherit the host process's permissions; it is not a sandbox. The planned judgment integration sends selected command-output windows to the configured provider. Retention, limits, and disclosure belong in the implementation contract.
+Sift inherits the host process's permissions; it is not a sandbox. Judgment sends command-output windows to TypeSafe. Commands are never retried. Errors, incomplete processing, and filtered content are reported separately.
+
+## Start
+
+```sh
+npm ci
+npm run check
+```
+
+Configure your MCP client to launch `node /absolute/path/to/sift/dist/cli.js`, with `TYPESAFE_API_KEY` and an explicit `SIFT_THRESHOLD`. There is no silently chosen relevance threshold. See [configuration and tool contracts](docs/configuration.md) for an example, resource limits, original-output backread, and cancellation behavior.
+
+`npm run smoke:live` is a separate, opt-in billable integration check using synthetic public text; ordinary tests never call the model.
 
 ## Design and evidence
 
