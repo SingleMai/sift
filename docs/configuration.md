@@ -45,7 +45,7 @@ Sift executes with its host user's permissions. It is not a sandbox and has no s
 
 Use `{"executable":"/bin/sh","args":["-c","your pipeline"],...}` when a shell is needed. Sift never retries commands. `execution.status` distinguishes ordinary exit (including nonzero exit codes), timeout, cancellation, output limit and spawn failure. Timeouts, cancellation and output overflow hard-kill the owned POSIX process group; the group is also cleaned up when its leader exits. Descendants that deliberately escape the group are outside this mechanism; it is not containment.
 
-`judgment.complete` describes only captured-output judgment coverage, not command success or semantic correctness. `execution.truncated` indicates capture loss; `output_truncated` indicates that retained evidence exceeds the response budget. Failed and unprocessed ranges are distinct from filtered spans. A small response can abbreviate issue ranges and marks `issues_truncated`; full decisions remain in the local manifest. Below-threshold content is never automatically returned.
+`judgment.complete` describes only captured-output judgment coverage, not command success or semantic correctness. `execution.truncated` indicates capture loss; `output_truncated` indicates that retained evidence exceeds the response budget. Failed and unprocessed ranges are distinct from filtered spans. Provider configuration, authentication/permission, and rate-limit failures have separate issue reasons; provider response bodies are not returned. Judgment metadata identifies the provider and requested model. A small response can abbreviate issue ranges and marks `issues_truncated`; full decisions remain in the local manifest. Below-threshold content is never automatically returned.
 
 `read_result`:
 
@@ -69,7 +69,7 @@ Capture streams have independent ordering; Sift does not invent a combined stdou
 | Field                |  Experimental default | Meaning                                                               |
 | -------------------- | --------------------: | --------------------------------------------------------------------- |
 | `threshold`          |              Required | Inclusive probability cutoff in [0,1]                                 |
-| `model`              |            `jev-1.12` | Requested TypeSafe model                                              |
+| `model`              |          `jev-latest` | Requested TypeSafe model                                              |
 | `stateDir`           | `~/.local/share/sift` | Absolute artifact directory                                           |
 | `commandTimeoutMs`   |                30,000 | Command deadline                                                      |
 | `judgeTimeoutMs`     |                10,000 | Per-judgment deadline                                                 |
@@ -100,4 +100,4 @@ Provider adapters must honor AbortSignal and release resources before rejecting 
 
 ## Validation status
 
-Local contract tests use a fake judgment provider or the real TypeSafe SDK with a mock HTTP transport. They do not establish Jev's relevance quality. `npm run smoke:live` is an explicit opt-in, billable SDK check using public synthetic text only; it does not send repository files. Full task-quality evaluation and threshold calibration remain follow-up work.
+Local contract tests use a fake judgment provider or the real TypeSafe SDK with a mock HTTP transport. They do not establish Jev's relevance quality. `npm run smoke:live` is an explicit opt-in, billable SDK check using public synthetic text only; it does not send repository files. Live SDK and production stdio MCP checks have also run successfully; see the [recorded pilot](../eval/README.md). Full task-quality evaluation and threshold calibration remain follow-up work. `jev-latest` is a moving alias verified against the available-model API, not a pinned release. An unavailable configured model fails explicitly; Sift does not silently choose another model.

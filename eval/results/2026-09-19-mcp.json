@@ -1,0 +1,60 @@
+{
+  "recordedAt": "2026-09-19T04:19:04.673Z",
+  "model": "jev-latest",
+  "threshold": 0.8,
+  "durationMs": 2583.8122089999997,
+  "execution": {
+    "status": "exited",
+    "exitCode": 0,
+    "signal": null,
+    "bytes": {
+      "stdout": 512,
+      "stderr": 0
+    },
+    "truncated": false,
+    "durationMs": 22.85691700000001
+  },
+  "judgment": {
+    "complete": true,
+    "threshold": 0.8,
+    "counts": {
+      "kept": 1,
+      "filtered": 1,
+      "failed": 0,
+      "unprocessed": 0
+    },
+    "invalid_streams": [],
+    "requests": 2,
+    "reserved_input_bytes": 4272,
+    "usage": {
+      "inputTokens": 1308,
+      "outputTokens": 44
+    },
+    "issues": [],
+    "issues_truncated": false
+  },
+  "probabilities": [
+    {
+      "start": 0,
+      "end": 256,
+      "decision": {
+        "status": "judged",
+        "probability": 0.24
+      }
+    },
+    {
+      "start": 256,
+      "end": 512,
+      "decision": {
+        "status": "judged",
+        "probability": 0.92
+      }
+    }
+  ],
+  "exactBackread": true,
+  "expectedEvidenceKept": true,
+  "expectedNoiseOmitted": true,
+  "capturedBytes": 512,
+  "selectedBytes": 256,
+  "limitations": "One synthetic two-window MCP run, not task-quality calibration."
+}

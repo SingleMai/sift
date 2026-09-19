@@ -16,8 +16,11 @@
     "start": "node dist/cli.js",
     "check": "npm run format:check && npm run typecheck && npm test && npm run build",
     "smoke:live": "node --import tsx scripts/live-smoke.ts",
-    "format": "prettier --write src test scripts docs README.md package.json tsconfig.json .github/workflows/check.yml",
-    "format:check": "prettier --check src test scripts docs README.md package.json tsconfig.json .github/workflows/check.yml"
+    "format": "prettier --write src test scripts docs eval README.md package.json tsconfig.json .github/workflows/check.yml",
+    "format:check": "prettier --check src test scripts docs eval README.md package.json tsconfig.json .github/workflows/check.yml",
+    "eval:live": "node --import tsx scripts/evaluate-live.ts",
+    "smoke:mcp:live": "npm run build && node --import tsx scripts/live-mcp.ts",
+    "smoke:repository:live": "npm run build && node --import tsx scripts/live-mcp.ts --repository-test"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.30.0",

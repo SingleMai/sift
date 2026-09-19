@@ -31,6 +31,7 @@ Configure your MCP client to launch `node /absolute/path/to/sift/dist/cli.js`, w
 
 ## Design and evidence
 
+- [Live Jev and MCP validation, including limitations](eval/README.md)
 - [First-version design (Chinese)](docs/design.md)
 - [Node / Effect / Rust comparison](benchmarks/local/RESULTS.md)
 - [Reproduce the local experiment](benchmarks/local/README.md)

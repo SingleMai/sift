@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { TypeSafeClient } from "@typesafe-ai/sdk";
 import { JevProvider } from "../src/judge.js";
+import { SiftError } from "../src/errors.js";
 
 const input = {
   purpose: "Did tests actually execute?",
@@ -97,4 +98,40 @@ test("Jev adapter disables SDK retries and propagates cancellation to transport"
   controller.abort();
   await rejected;
   assert.equal(aborted, true);
+});
+
+test("provider configuration, authentication and rate errors stay actionable without leaking bodies", async () => {
+  for (const [status, expected] of [
+    [400, "JUDGE_CONFIGURATION"],
+    [401, "JUDGE_AUTHENTICATION"],
+    [403, "JUDGE_AUTHENTICATION"],
+    [422, "JUDGE_CONFIGURATION"],
+    [429, "JUDGE_RATE_LIMIT"],
+  ] as const) {
+    let calls = 0;
+    const provider = new JevProvider(
+      new TypeSafeClient({
+        apiKey: "test-only",
+        logLevel: "off",
+        fetch: async () => {
+          calls++;
+          return new Response(
+            JSON.stringify({
+              detail: { message: "private provider response" },
+            }),
+            { status },
+          );
+        },
+      }),
+      "unavailable-model",
+    );
+    await assert.rejects(
+      provider.prepare(input).evaluate(new AbortController().signal),
+      (error) =>
+        error instanceof SiftError &&
+        error.code === expected &&
+        !error.message.includes("private provider response"),
+    );
+    assert.equal(calls, 1);
+  }
 });

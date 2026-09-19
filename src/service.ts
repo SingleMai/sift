@@ -1,4 +1,6 @@
 import { Effect } from "effect";
+import type { Decision } from "./types.js";
+
 import { isAbsolute } from "node:path";
 import { stat } from "node:fs/promises";
 import { ArtifactStore } from "./store.js";
@@ -246,10 +248,7 @@ export class SiftService {
                     status: "failed",
                     reason: timeout.signal.aborted
                       ? "timeout"
-                      : error instanceof SiftError &&
-                          error.code === "INVALID_JUDGMENT"
-                        ? "invalid_response"
-                        : "provider",
+                      : judgmentFailureReason(error),
                   };
               } finally {
                 clearTimeout(requestTimer);
@@ -325,6 +324,8 @@ export class SiftService {
           counts.unprocessed === 0 &&
           manifest.invalidStreams.length === 0,
         threshold: manifest.threshold,
+        provider: manifest.provider,
+        model: manifest.model,
         counts,
         invalid_streams: manifest.invalidStreams,
         requests: manifest.requests,
@@ -458,5 +459,25 @@ export class SiftService {
         };
       }),
     );
+  }
+}
+
+function judgmentFailureReason(
+  error: unknown,
+): Extract<Decision, { status: "failed" }>["reason"] {
+  if (!(error instanceof SiftError)) return "provider";
+  switch (error.code) {
+    case "INVALID_JUDGMENT":
+      return "invalid_response";
+    case "JUDGE_TIMEOUT":
+      return "timeout";
+    case "JUDGE_CONFIGURATION":
+      return "configuration";
+    case "JUDGE_AUTHENTICATION":
+      return "authentication";
+    case "JUDGE_RATE_LIMIT":
+      return "rate_limit";
+    default:
+      return "provider";
   }
 }

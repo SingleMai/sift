@@ -21,7 +21,14 @@ export type Decision =
   | { status: "judged"; probability: number }
   | {
       status: "failed";
-      reason: "provider" | "invalid_response" | "timeout" | "invalid_utf8";
+      reason:
+        | "provider"
+        | "invalid_response"
+        | "timeout"
+        | "invalid_utf8"
+        | "configuration"
+        | "authentication"
+        | "rate_limit";
     }
   | { status: "unprocessed"; reason: "budget" | "deadline" | "cancelled" };
 export type ChunkRecord = Span & { decision: Decision };

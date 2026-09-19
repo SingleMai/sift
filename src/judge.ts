@@ -1,4 +1,9 @@
-import { noul, TypeSafeClient } from "@typesafe-ai/sdk";
+import {
+  APIError,
+  APITimeoutError,
+  noul,
+  TypeSafeClient,
+} from "@typesafe-ai/sdk";
 import { Schema } from "effect";
 import type { CommandInput, Span } from "./types.js";
 import { failure } from "./errors.js";
@@ -72,10 +77,31 @@ export class JevProvider implements JudgeProvider {
     return {
       inputBytes: Buffer.byteLength(JSON.stringify(request)),
       evaluate: async (signal) => {
-        const response = await this.client.systemOne(request, {
-          signal,
-          retry: { maxRetries: 0 },
-        });
+        let response;
+        try {
+          response = await this.client.systemOne(request, {
+            signal,
+            retry: { maxRetries: 0 },
+          });
+        } catch (error) {
+          if (error instanceof APITimeoutError)
+            throw failure("JUDGE_TIMEOUT", "Judgment request timed out.");
+          if (error instanceof APIError) {
+            if (error.status === 400 || error.status === 422)
+              throw failure(
+                "JUDGE_CONFIGURATION",
+                "Provider rejected the model or request configuration.",
+              );
+            if (error.status === 401 || error.status === 403)
+              throw failure(
+                "JUDGE_AUTHENTICATION",
+                "Provider rejected the credentials or permissions.",
+              );
+            if (error.status === 429)
+              throw failure("JUDGE_RATE_LIMIT", "Provider rate limit reached.");
+          }
+          throw error;
+        }
         return validateJudgment({
           probability: response.answers.relevant.noul,
           inputTokens: response.usage.input_tokens,

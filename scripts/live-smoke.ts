@@ -1,10 +1,14 @@
 import { createJevProvider } from "../src/judge.js";
+import { defaults } from "../src/config.js";
 
 if (!process.env.TYPESAFE_API_KEY)
   throw new Error(
     "TYPESAFE_API_KEY is required for this opt-in billable smoke test.",
   );
-const provider = createJevProvider(process.env.TYPESAFE_API_KEY, "jev-1.12");
+const provider = createJevProvider(
+  process.env.TYPESAFE_API_KEY,
+  defaults.model,
+);
 const prepared = provider.prepare({
   purpose: "Determine whether any test cases ran.",
   command: { executable: "synthetic-test-runner", args: [] },

@@ -4,6 +4,8 @@ import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { fake, nodeCommand, run, setup } from "./helpers.js";
 import { SiftService } from "../src/service.js";
+import { failure } from "../src/errors.js";
+
 import { spawnSync } from "node:child_process";
 
 test("filters below threshold, preserves failed exit and raw backread across restart", async () => {
@@ -467,6 +469,26 @@ test("timeout stops descendants in the owned process group, including SIGTERM-re
       state.status === 1 || state.stdout.trim().startsWith("Z"),
       `descendant still running: ${state.stdout}`,
     );
+  } finally {
+    await env.close();
+  }
+});
+
+test("provider configuration failure is distinguishable from low relevance", async () => {
+  const env = await setup(
+    {},
+    fake(async () => {
+      throw failure("JUDGE_CONFIGURATION", "Provider rejected model");
+    }),
+  );
+  try {
+    const result = await run(
+      env.service.execute(nodeCommand('process.stdout.write("evidence")')),
+    );
+    assert.equal(result.judgment.complete, false);
+    assert.equal(result.judgment.counts.filtered, 0);
+    assert.equal(result.judgment.issues[0]?.reason, "failed:configuration");
+    assert.equal(result.judgment.model, env.config.model);
   } finally {
     await env.close();
   }

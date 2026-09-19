@@ -27,7 +27,7 @@ export const ConfigSchema = Schema.Struct({
 export type Config = typeof ConfigSchema.Type;
 export const defaults = {
   stateDir: join(homedir(), ".local", "share", "sift"),
-  model: "jev-1.12",
+  model: "jev-latest",
   commandTimeoutMs: 30_000,
   judgeTimeoutMs: 10_000,
   judgmentDeadlineMs: 60_000,
