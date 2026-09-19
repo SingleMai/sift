@@ -69,6 +69,7 @@ Capture streams have independent ordering; Sift does not invent a combined stdou
 | Field                |  Experimental default | Meaning                                                               |
 | -------------------- | --------------------: | --------------------------------------------------------------------- |
 | `threshold`          |              Required | Inclusive probability cutoff in [0,1]                                 |
+| `chunkStrategy`      |              `window` | `command` opts into recognized TAP and search record grouping         |
 | `model`              |          `jev-latest` | Requested TypeSafe model                                              |
 | `stateDir`           | `~/.local/share/sift` | Absolute artifact directory                                           |
 | `commandTimeoutMs`   |                30,000 | Command deadline                                                      |
@@ -101,3 +102,18 @@ Provider adapters must honor AbortSignal and release resources before rejecting 
 ## Validation status
 
 Local contract tests use a fake judgment provider or the real TypeSafe SDK with a mock HTTP transport. They do not establish Jev's relevance quality. `npm run smoke:live` is an explicit opt-in, billable SDK check using public synthetic text only; it does not send repository files. Live SDK and production stdio MCP checks have also run successfully; see the [recorded pilot](../eval/README.md). Full task-quality evaluation and threshold calibration remain follow-up work. `jev-latest` is a moving alias verified against the available-model API, not a pinned release. An unavailable configured model fails explicitly; Sift does not silently choose another model.
+
+## Experimental command-aware chunking
+
+Set `"chunkStrategy": "command"` in your `SIFT_CONFIG` JSON to try structured boundaries. `window` remains the default. The chosen strategy for each captured stream is recorded in `judgment.strategies` and the artifact manifest; selection changes neither threshold nor provider instructions.
+
+The first adapters deliberately recognize a narrow command shape (absolute executable paths are allowed):
+
+- `node --test --test-reporter=tap <files...>`: top-level Node TAP subtest records are packed without splitting a fitting record; the plan and final aggregate summary start a separate group. Nested tests stay inside their parent record. Headers are separate.
+- `rg --line-number <pattern> <paths...>`: complete result lines are packed together. This is bounded line grouping, not semantic selection or a full ripgrep parser.
+
+Additional option arguments, shell wrappers, other reporters, JSON/multiline/NUL modes and stderr use the generic window strategy. These are format-boundary heuristics, not command authentication or a security mechanism. No content is discarded by indexing; malformed or truncated records still participate in byte coverage. Invalid UTF-8 follows the existing explicit recovery contract.
+
+Targets are bounded by `min(chunkBytes, 1024)` for these two adapters. Oversized records or lines must still split at UTF-8 boundaries. Adjacent small records share calls; the index is capped at 4,096 structured spans, with explicit `CHUNK_LIMIT` and a raw-recovery result ID if exceeded. The existing provider-call and input budgets still apply, so additional chunks may produce unprocessed ranges rather than silently raising budgets. Neighbor context is unchanged and can multiply provider token usage.
+
+See the [live comparison](../eval/README.md#structured-strategy-comparison) before enabling this option. The pilot preserved its predeclared evidence, but increased model calls and input tokens; it is not a general correctness guarantee.

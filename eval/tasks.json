@@ -61,5 +61,63 @@
         "text": "settings are from staging, not production."
       }
     ]
+  },
+  {
+    "id": "two-failures-new",
+    "executable": "node",
+    "args": ["--test", "--test-reporter=tap", "eval/tasks/failure-other.mjs"],
+    "purpose": "Identify both failed checks, their expected and actual values, and total failed test count.",
+    "exitCode": 1,
+    "required": [
+      {
+        "stream": "stdout",
+        "text": "not ok 13 - connection retry budget"
+      },
+      {
+        "stream": "stdout",
+        "text": "not ok 14 - request deadline"
+      },
+      {
+        "stream": "stdout",
+        "text": "expected: 3"
+      },
+      {
+        "stream": "stdout",
+        "text": "actual: 8"
+      },
+      {
+        "stream": "stdout",
+        "text": "expected: 5000"
+      },
+      {
+        "stream": "stdout",
+        "text": "actual: 9000"
+      },
+      {
+        "stream": "stdout",
+        "text": "# fail 2"
+      }
+    ]
+  },
+  {
+    "id": "two-settings-new",
+    "executable": "rg",
+    "args": [
+      "--line-number",
+      "retry_text|maxRetries",
+      "eval/tasks/settings-other.txt"
+    ],
+    "purpose": "Compare the primary and background client retry counts and request timeouts, including a disabled retry setting. Ignore documentation labels.",
+    "exitCode": 0,
+    "required": [
+      {
+        "stream": "stdout",
+        "text": "src/primary.ts: maxRetries = 0; requestTimeoutMs = 1500;"
+      },
+      {
+        "stream": "stdout",
+        "text": "src/background.ts: maxRetries = 5; requestTimeoutMs = 20000;"
+      }
+    ]
   }
 ]

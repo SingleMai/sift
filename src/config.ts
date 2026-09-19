@@ -9,6 +9,7 @@ export const ConfigSchema = Schema.Struct({
   stateDir: Schema.String,
   threshold: Schema.Number.pipe(Schema.between(0, 1)),
   model: Schema.NonEmptyString,
+  chunkStrategy: Schema.Literal("window", "command"),
   commandTimeoutMs: positive,
   judgeTimeoutMs: positive,
   judgmentDeadlineMs: positive,
@@ -28,6 +29,7 @@ export type Config = typeof ConfigSchema.Type;
 export const defaults = {
   stateDir: join(homedir(), ".local", "share", "sift"),
   model: "jev-latest",
+  chunkStrategy: "window" as const,
   commandTimeoutMs: 30_000,
   judgeTimeoutMs: 10_000,
   judgmentDeadlineMs: 60_000,

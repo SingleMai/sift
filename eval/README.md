@@ -68,3 +68,27 @@ The scorer validates returned byte ranges against the original streams and check
 `eval:tasks:live` requires `rg` on PATH, writes the report even for measured quality failures, and exits nonzero for missing required evidence, incomplete judgment or response truncation. Deliberate test-command exit code 1 is expected and is not itself a harness failure. This billable quality experiment is separate from offline CI. Future runs retain exact inputs and responses privately under ignored `.tmp/task-evaluation-artifacts/` for diagnosis; the first recorded run predates that retention addition. The published report omits credentials, local paths and result IDs.
 
 The evidence does **not** support changing the universal cutoff or choosing one global chunk size. The next implementation experiment should compare format-aware TAP records and search-result records through the existing `ChunkStrategy` interface, using these failures as development regressions plus fresh held-out tasks. Merely lowering the cutoff until these cases pass would overfit the pilot. Small outputs also need an explicit product decision about whether filtering overhead is worthwhile; this evaluation does not introduce an automatic bypass or return below-threshold content.
+
+## Structured strategy comparison
+
+The next implementation adds opt-in `chunkStrategy: "command"`; default `window` and threshold policy remain unchanged. TAP separates its final summary and packs fitting test records; explicit line-number search output uses bounded line groups. Neither adapter decides semantic relevance. [Implementation](../src/strategies.ts) and [configuration](../docs/configuration.md#experimental-command-aware-chunking) specify supported shapes and limits.
+
+We reran the three original tasks and added two tasks with expectations fixed before their first inference: two independent failing assertions, and two client settings including disabled retries. These new tasks are assistant-authored and use the same formats; they are fresh development checks, not independently curated held-out evaluation. [Full results](results/2026-09-19-strategies.json) preserve both baseline and structured runs.
+
+| Task                         | Window: response change | Command strategy: response change | Command strategy: calls | Command strategy: added time |
+| ---------------------------- | ----------------------: | --------------------------------: | ----------------------: | ---------------------------: |
+| Failing tests                |            17.5% larger |                     49.5% smaller |                       6 |                       3.56 s |
+| Search settings              |             8.8% larger |                     74.3% smaller |                       7 |                       1.20 s |
+| Cross-boundary JSON + stderr |            55.6% larger |                      55.6% larger |                       2 |                       0.65 s |
+| Two failures (new)           |            19.7% larger |                     17.8% smaller |                       6 |                       1.30 s |
+| Two settings (new)           |            20.1% larger |                     12.1% smaller |                       3 |                       2.03 s |
+
+All ten executions retained their predeclared markers. **The generic baseline passed this rerun too:** its unchanged search input scored 0.90 versus the earlier 0.79. This variability means the first failures cannot be declared permanently fixed, and single-run comparisons do not establish a recall advantage. The separated TAP summaries scored 0.93 and 0.89 in this run. The cross-boundary JSON command is intentionally outside recognized formats and still uses the generic strategy.
+
+Both modes use configured chunkBytes 8,192, contextBytes 2,048 and threshold 0.8. Structured adapters cap actual targets at 1,024 bytes; this compares the whole strategy choice, not record boundaries in isolation. Prompt and cutoff were not tuned. The generic mode used 6 requests and 9,604 input tokens; command mode used 24 requests and 40,348 input tokens. Output tokens were 132 and 528 respectively. The reduction in caller response bytes therefore comes with substantially more judge work. The byte baseline is the same explicit unfiltered tool-result definition above. No task-model outcome, monetary cost, or token savings for the caller was measured.
+
+```sh
+npm run eval:tasks:live -- --compare-strategies
+```
+
+Offline tests protect exact byte coverage, UTF-8/CRLF/long-line handling, fitting record boundaries, summary separation, conservative routing, and explicit unprocessed ranges when structured chunks exhaust the call budget. Inference quality remains opt-in and billable. The stored report has `qualityPassed: true` for this run only. Earlier failing reports remain committed. Wider formats, repeated runs and independent task labels are still needed before considering this the default.

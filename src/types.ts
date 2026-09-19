@@ -48,6 +48,7 @@ export interface Manifest {
   state: "running" | "complete" | "failed";
   execution?: Execution;
   records: ChunkRecord[];
+  strategies: Partial<Record<OutputStream, string>>;
   invalidStreams: OutputStream[];
   threshold: number;
   provider: string;

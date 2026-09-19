@@ -13,6 +13,7 @@ Sift is a local MCP tool that runs a command, retains its original output, and s
 - Return original spans that meet a server-configured relevance threshold.
 - `read_result`: retrieve bounded ranges of retained output when more context is needed.
 - Distinguish command failure, incomplete judgment, filtered spans, and truncated output.
+- Opt into command-aware TAP/search grouping; see the [measured benefits and costs](eval/README.md#structured-strategy-comparison).
 
 The stack is Node.js 24+, TypeScript, and Effect, initially supporting macOS/Linux. Jev is behind a replaceable judgment interface; command-specific chunk strategies have a separate extension interface. No API key is needed to run tests or local benchmarks.
 

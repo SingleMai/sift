@@ -1,0 +1,997 @@
+{
+  "recordedAt": "2026-09-19T04:54:41.958Z",
+  "model": "jev-latest",
+  "fixture": "eval/tasks.json",
+  "limitation": "Assistant-authored development scenarios using real Node test runner and ripgrep output plus synthetic cross-boundary JSON. One run per configuration, no independent labels, no main-model outcome or token measurement. Baseline is an explicit unfiltered tool-result object, not an existing host integration. Raw verification uses local disk and is not returned to the caller.",
+  "qualityPassed": true,
+  "rows": [
+    {
+      "task": "failing-tests",
+      "chunkBytes": 8192,
+      "chunkStrategy": "window",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 1307.7075829999999,
+      "commandDurationMs": 71.791167,
+      "addedDurationMs": 1235.9164159999998,
+      "judgment": {
+        "complete": true,
+        "requests": 1,
+        "usage": {
+          "inputTokens": 2012,
+          "outputTokens": 22
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "utf8-window-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 1,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 4787,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "not ok 25 - payment transitions to paid",
+          "start": 2466,
+          "end": 2505,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 'paid'",
+          "start": 2787,
+          "end": 2803,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 'pending'",
+          "start": 2806,
+          "end": 2823,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "# fail 1",
+          "start": 3361,
+          "end": 3369,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 3429,
+      "selectedBytes": 3429,
+      "response": {
+        "filteredBytes": 4736,
+        "unfilteredBytes": 4032,
+        "reduction": -0.17460317460317465
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 3429,
+          "decision": {
+            "status": "judged",
+            "probability": 0.98
+          }
+        }
+      ]
+    },
+    {
+      "task": "search-settings",
+      "chunkBytes": 8192,
+      "chunkStrategy": "window",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 457.34299999999985,
+      "commandDurationMs": 5.305082999999968,
+      "addedDurationMs": 452.0379169999999,
+      "judgment": {
+        "complete": true,
+        "requests": 1,
+        "usage": {
+          "inputTokens": 2926,
+          "outputTokens": 22
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "utf8-window-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 1,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 8445,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "src/http/client.ts: maxRetries = 3; requestTimeoutMs = 5000;",
+          "start": 3504,
+          "end": 3564,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 7030,
+      "selectedBytes": 7030,
+      "response": {
+        "filteredBytes": 8707,
+        "unfilteredBytes": 8003,
+        "reduction": -0.08796701237036109
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 7030,
+          "decision": {
+            "status": "judged",
+            "probability": 0.9
+          }
+        }
+      ]
+    },
+    {
+      "task": "cross-boundary-json",
+      "chunkBytes": 8192,
+      "chunkStrategy": "window",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 2657.655584,
+      "commandDurationMs": 33.792624999999816,
+      "addedDurationMs": 2623.862959,
+      "judgment": {
+        "complete": true,
+        "requests": 2,
+        "usage": {
+          "inputTokens": 1433,
+          "outputTokens": 44
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "utf8-window-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 2,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 3436,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "\"requestTimeoutMs\":5000",
+          "start": 1004,
+          "end": 1027,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "\"maxRetries\":3",
+          "start": 1028,
+          "end": 1042,
+          "retained": true
+        },
+        {
+          "stream": "stderr",
+          "text": "settings are from staging, not production.",
+          "start": 9,
+          "end": 51,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 1096,
+      "selectedBytes": 1096,
+      "response": {
+        "filteredBytes": 2142,
+        "unfilteredBytes": 1377,
+        "reduction": -0.5555555555555556
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 1044,
+          "decision": {
+            "status": "judged",
+            "probability": 0.92
+          }
+        },
+        {
+          "stream": "stderr",
+          "start": 0,
+          "end": 52,
+          "decision": {
+            "status": "judged",
+            "probability": 0.85
+          }
+        }
+      ]
+    },
+    {
+      "task": "two-failures-new",
+      "chunkBytes": 8192,
+      "chunkStrategy": "window",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 425.2527919999993,
+      "commandDurationMs": 74.0406669999993,
+      "addedDurationMs": 351.212125,
+      "judgment": {
+        "complete": true,
+        "requests": 1,
+        "usage": {
+          "inputTokens": 1796,
+          "outputTokens": 22
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "utf8-window-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 1,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 4380,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "not ok 13 - connection retry budget",
+          "start": 1243,
+          "end": 1278,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "not ok 14 - request deadline",
+          "start": 2112,
+          "end": 2140,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 3",
+          "start": 1555,
+          "end": 1566,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 8",
+          "start": 1569,
+          "end": 1578,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 5000",
+          "start": 2423,
+          "end": 2437,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 9000",
+          "start": 2440,
+          "end": 2452,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "# fail 2",
+          "start": 2996,
+          "end": 3004,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 3064,
+      "selectedBytes": 3064,
+      "response": {
+        "filteredBytes": 4286,
+        "unfilteredBytes": 3582,
+        "reduction": -0.19653824678950316
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 3064,
+          "decision": {
+            "status": "judged",
+            "probability": 0.98
+          }
+        }
+      ]
+    },
+    {
+      "task": "two-settings-new",
+      "chunkBytes": 8192,
+      "chunkStrategy": "window",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 485.3964590000005,
+      "commandDurationMs": 14.96704200000022,
+      "addedDurationMs": 470.4294170000003,
+      "judgment": {
+        "complete": true,
+        "requests": 1,
+        "usage": {
+          "inputTokens": 1437,
+          "outputTokens": 22
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "utf8-window-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 1,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 4184,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "src/primary.ts: maxRetries = 0; requestTimeoutMs = 1500;",
+          "start": 1328,
+          "end": 1384,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "src/background.ts: maxRetries = 5; requestTimeoutMs = 20000;",
+          "start": 2794,
+          "end": 2854,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 2855,
+      "selectedBytes": 2855,
+      "response": {
+        "filteredBytes": 4198,
+        "unfilteredBytes": 3494,
+        "reduction": -0.20148826559816824
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 2855,
+          "decision": {
+            "status": "judged",
+            "probability": 0.94
+          }
+        }
+      ]
+    },
+    {
+      "task": "failing-tests",
+      "chunkBytes": 8192,
+      "chunkStrategy": "command",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 3624.9351659999993,
+      "commandDurationMs": 61.85708299999999,
+      "addedDurationMs": 3563.0780829999994,
+      "judgment": {
+        "complete": true,
+        "requests": 6,
+        "usage": {
+          "inputTokens": 10720,
+          "outputTokens": 132
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "node-tap-records-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 2,
+          "filtered": 4,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 25174,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "not ok 25 - payment transitions to paid",
+          "start": 2466,
+          "end": 2505,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 'paid'",
+          "start": 2789,
+          "end": 2805,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 'pending'",
+          "start": 2808,
+          "end": 2825,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "# fail 1",
+          "start": 3363,
+          "end": 3371,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 3431,
+      "selectedBytes": 1004,
+      "response": {
+        "filteredBytes": 2040,
+        "unfilteredBytes": 4042,
+        "reduction": 0.4952993567540821
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 15,
+          "decision": {
+            "status": "judged",
+            "probability": 0.17
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 15,
+          "end": 1003,
+          "decision": {
+            "status": "judged",
+            "probability": 0.39
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1003,
+          "end": 2021,
+          "decision": {
+            "status": "judged",
+            "probability": 0.25
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 2021,
+          "end": 2427,
+          "decision": {
+            "status": "judged",
+            "probability": 0.26
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 2427,
+          "end": 3325,
+          "decision": {
+            "status": "judged",
+            "probability": 0.98
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 3325,
+          "end": 3431,
+          "decision": {
+            "status": "judged",
+            "probability": 0.93
+          }
+        }
+      ]
+    },
+    {
+      "task": "search-settings",
+      "chunkBytes": 8192,
+      "chunkStrategy": "command",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 1205.2595000000001,
+      "commandDurationMs": 7.826874999999745,
+      "addedDurationMs": 1197.4326250000004,
+      "judgment": {
+        "complete": true,
+        "requests": 7,
+        "usage": {
+          "inputTokens": 13891,
+          "outputTokens": 154
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "rg-line-groups-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 1,
+          "filtered": 6,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 38607,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "src/http/client.ts: maxRetries = 3; requestTimeoutMs = 5000;",
+          "start": 3504,
+          "end": 3564,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 7030,
+      "selectedBytes": 994,
+      "response": {
+        "filteredBytes": 2056,
+        "unfilteredBytes": 8003,
+        "reduction": 0.7430963388729226
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 1005,
+          "decision": {
+            "status": "judged",
+            "probability": 0.11
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1005,
+          "end": 2019,
+          "decision": {
+            "status": "judged",
+            "probability": 0.1
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 2019,
+          "end": 3033,
+          "decision": {
+            "status": "judged",
+            "probability": 0.08
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 3033,
+          "end": 4027,
+          "decision": {
+            "status": "judged",
+            "probability": 0.96
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 4027,
+          "end": 5028,
+          "decision": {
+            "status": "judged",
+            "probability": 0.07
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 5028,
+          "end": 6029,
+          "decision": {
+            "status": "judged",
+            "probability": 0.07
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 6029,
+          "end": 7030,
+          "decision": {
+            "status": "judged",
+            "probability": 0.07
+          }
+        }
+      ]
+    },
+    {
+      "task": "cross-boundary-json",
+      "chunkBytes": 8192,
+      "chunkStrategy": "command",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 675.6201249999995,
+      "commandDurationMs": 26.467125000000124,
+      "addedDurationMs": 649.1529999999993,
+      "judgment": {
+        "complete": true,
+        "requests": 2,
+        "usage": {
+          "inputTokens": 1433,
+          "outputTokens": 44
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "utf8-window-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 2,
+          "filtered": 0,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 3436,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "\"requestTimeoutMs\":5000",
+          "start": 1004,
+          "end": 1027,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "\"maxRetries\":3",
+          "start": 1028,
+          "end": 1042,
+          "retained": true
+        },
+        {
+          "stream": "stderr",
+          "text": "settings are from staging, not production.",
+          "start": 9,
+          "end": 51,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 1096,
+      "selectedBytes": 1096,
+      "response": {
+        "filteredBytes": 2142,
+        "unfilteredBytes": 1377,
+        "reduction": -0.5555555555555556
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 1044,
+          "decision": {
+            "status": "judged",
+            "probability": 0.92
+          }
+        },
+        {
+          "stream": "stderr",
+          "start": 0,
+          "end": 52,
+          "decision": {
+            "status": "judged",
+            "probability": 0.84
+          }
+        }
+      ]
+    },
+    {
+      "task": "two-failures-new",
+      "chunkBytes": 8192,
+      "chunkStrategy": "command",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 1377.8401670000003,
+      "commandDurationMs": 80.84004099999947,
+      "addedDurationMs": 1297.0001260000008,
+      "judgment": {
+        "complete": true,
+        "requests": 6,
+        "usage": {
+          "inputTokens": 9987,
+          "outputTokens": 132
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "node-tap-records-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 3,
+          "filtered": 3,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 24234,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "not ok 13 - connection retry budget",
+          "start": 1241,
+          "end": 1276,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "not ok 14 - request deadline",
+          "start": 2110,
+          "end": 2138,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 3",
+          "start": 1553,
+          "end": 1564,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 8",
+          "start": 1567,
+          "end": 1576,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "expected: 5000",
+          "start": 2421,
+          "end": 2435,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "actual: 9000",
+          "start": 2438,
+          "end": 2450,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "# fail 2",
+          "start": 2994,
+          "end": 3002,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 3062,
+      "selectedBytes": 1856,
+      "response": {
+        "filteredBytes": 2943,
+        "unfilteredBytes": 3581,
+        "reduction": 0.17816252443451552
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 15,
+          "decision": {
+            "status": "judged",
+            "probability": 0.2
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 15,
+          "end": 1002,
+          "decision": {
+            "status": "judged",
+            "probability": 0.55
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1002,
+          "end": 1206,
+          "decision": {
+            "status": "judged",
+            "probability": 0.21
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1206,
+          "end": 2082,
+          "decision": {
+            "status": "judged",
+            "probability": 0.97
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 2082,
+          "end": 2956,
+          "decision": {
+            "status": "judged",
+            "probability": 0.97
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 2956,
+          "end": 3062,
+          "decision": {
+            "status": "judged",
+            "probability": 0.89
+          }
+        }
+      ]
+    },
+    {
+      "task": "two-settings-new",
+      "chunkBytes": 8192,
+      "chunkStrategy": "command",
+      "contextBytes": 2048,
+      "threshold": 0.8,
+      "durationMs": 2036.114125,
+      "commandDurationMs": 8.92766599999959,
+      "addedDurationMs": 2027.1864590000005,
+      "judgment": {
+        "complete": true,
+        "requests": 3,
+        "usage": {
+          "inputTokens": 4317,
+          "outputTokens": 66
+        },
+        "threshold": 0.8,
+        "provider": "jev",
+        "strategies": {
+          "stdout": "rg-line-groups-v1",
+          "stderr": "utf8-window-v1"
+        },
+        "model": "jev-latest",
+        "counts": {
+          "kept": 2,
+          "filtered": 1,
+          "failed": 0,
+          "unprocessed": 0
+        },
+        "invalid_streams": [],
+        "reserved_input_bytes": 12558,
+        "issues": [],
+        "issues_truncated": false
+      },
+      "outputTruncated": false,
+      "required": [
+        {
+          "stream": "stdout",
+          "text": "src/primary.ts: maxRetries = 0; requestTimeoutMs = 1500;",
+          "start": 1328,
+          "end": 1384,
+          "retained": true
+        },
+        {
+          "stream": "stdout",
+          "text": "src/background.ts: maxRetries = 5; requestTimeoutMs = 20000;",
+          "start": 2794,
+          "end": 2854,
+          "retained": true
+        }
+      ],
+      "allRequiredRetained": true,
+      "capturedBytes": 2855,
+      "selectedBytes": 1866,
+      "response": {
+        "filteredBytes": 3070,
+        "unfilteredBytes": 3493,
+        "reduction": 0.12109934154022328
+      },
+      "probabilities": [
+        {
+          "stream": "stdout",
+          "start": 0,
+          "end": 989,
+          "decision": {
+            "status": "judged",
+            "probability": 0.58
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 989,
+          "end": 1965,
+          "decision": {
+            "status": "judged",
+            "probability": 0.91
+          }
+        },
+        {
+          "stream": "stdout",
+          "start": 1965,
+          "end": 2855,
+          "decision": {
+            "status": "judged",
+            "probability": 0.87
+          }
+        }
+      ]
+    }
+  ]
+}

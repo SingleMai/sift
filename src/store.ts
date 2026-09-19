@@ -176,6 +176,7 @@ export class ArtifactStore {
       expiresAt: createdAt + this.config.retentionMs,
       state: "running",
       records: [],
+      strategies: {},
       invalidStreams: [],
       threshold: this.config.threshold,
       provider,

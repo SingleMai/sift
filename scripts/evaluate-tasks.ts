@@ -54,7 +54,16 @@ const artifactDir = join(
   new Date().toISOString().replaceAll(":", "-"),
 );
 await mkdir(artifactDir, { recursive: true, mode: 0o700 });
-for (const chunkBytes of [1024, defaults.chunkBytes]) {
+const configurations = process.argv.includes("--compare-strategies")
+  ? [
+      { chunkBytes: defaults.chunkBytes, chunkStrategy: "window" },
+      { chunkBytes: defaults.chunkBytes, chunkStrategy: "command" },
+    ]
+  : [
+      { chunkBytes: 1024, chunkStrategy: "window" },
+      { chunkBytes: defaults.chunkBytes, chunkStrategy: "window" },
+    ];
+for (const { chunkBytes, chunkStrategy } of configurations) {
   const root = await mkdtemp(join(tmpdir(), "sift-task-eval-"));
   const config = join(root, "config.json"),
     stateDir = join(root, "artifacts");
@@ -64,6 +73,7 @@ for (const chunkBytes of [1024, defaults.chunkBytes]) {
       stateDir,
       threshold: 0.8,
       chunkBytes,
+      chunkStrategy,
       outputBytes: 65536,
     }),
     { mode: 0o600 },
@@ -116,7 +126,7 @@ for (const chunkBytes of [1024, defaults.chunkBytes]) {
         ),
       };
       await writeFile(
-        join(artifactDir, `${task.id}-${chunkBytes}.json`),
+        join(artifactDir, `${task.id}-${chunkStrategy}-${chunkBytes}.json`),
         JSON.stringify({
           task,
           chunkBytes,
@@ -137,6 +147,7 @@ for (const chunkBytes of [1024, defaults.chunkBytes]) {
       const row = {
         task: task.id,
         chunkBytes,
+        chunkStrategy,
         contextBytes: defaults.contextBytes,
         threshold: 0.8,
         durationMs,
@@ -172,6 +183,7 @@ for (const chunkBytes of [1024, defaults.chunkBytes]) {
         JSON.stringify({
           task: row.task,
           chunkBytes,
+          chunkStrategy,
           allRequiredRetained: row.allRequiredRetained,
           responseReduction: row.response.reduction,
           addedDurationMs: row.addedDurationMs,

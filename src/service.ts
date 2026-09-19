@@ -1,3 +1,4 @@
+import { commandStrategy } from "./strategies.js";
 import { Effect } from "effect";
 import type { Decision } from "./types.js";
 
@@ -60,7 +61,10 @@ export class SiftService {
     readonly config: Config,
     readonly store: ArtifactStore,
     readonly provider: JudgeProvider,
-    private readonly strategyFor: StrategyResolver = () => windowStrategy,
+    private readonly strategyFor: StrategyResolver = config.chunkStrategy ===
+    "command"
+      ? commandStrategy
+      : () => windowStrategy,
   ) {}
 
   execute(input: CommandInput) {
@@ -88,7 +92,9 @@ export class SiftService {
       for (const stream of streams) {
         let spans: Span[];
         try {
-          spans = await this.strategyFor(input, stream).index(
+          const strategy = this.strategyFor(input, stream);
+          manifest.strategies[stream] = strategy.name;
+          spans = await strategy.index(
             this.store.path(manifest.id, stream),
             stream,
             this.config.chunkBytes,
@@ -325,6 +331,7 @@ export class SiftService {
           manifest.invalidStreams.length === 0,
         threshold: manifest.threshold,
         provider: manifest.provider,
+        strategies: manifest.strategies,
         model: manifest.model,
         counts,
         invalid_streams: manifest.invalidStreams,
