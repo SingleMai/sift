@@ -1,3 +1,4 @@
+import { version } from "./version.js";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { Effect } from "effect";
 import { z } from "zod";
@@ -5,7 +6,7 @@ import { SiftError } from "./errors.js";
 import type { SiftService } from "./service.js";
 
 export function createMcpServer(service: SiftService) {
-  const server = new McpServer({ name: "sift", version: "0.1.0" });
+  const server = new McpServer({ name: "sift", version });
   const shutdown = new AbortController();
   const pending = new Set<Promise<unknown>>();
   const text = (value: unknown, isError = false) => ({

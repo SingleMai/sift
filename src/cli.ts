@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { version } from "./version.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { Effect } from "effect";
 import { loadConfig } from "./config.js";
@@ -7,6 +8,22 @@ import { createJevProvider } from "./judge.js";
 import { ArtifactStore } from "./store.js";
 import { SiftService } from "./service.js";
 import { createMcpServer } from "./mcp.js";
+
+const args = process.argv.slice(2);
+if (args.length) {
+  if (args.length === 1 && args[0] === "--version") {
+    process.stdout.write(`${version}\n`);
+    process.exit(0);
+  }
+  if (args.length === 1 && args[0] === "--help") {
+    process.stdout.write(
+      `Sift ${version} — local stdio MCP server\n\nUsage: sift [--help | --version]\nWithout arguments, serves execute and read_result over stdio.\nRequires TYPESAFE_API_KEY and an explicit threshold via SIFT_THRESHOLD or SIFT_CONFIG.\nSIFT_CONFIG points to a JSON configuration file; SIFT_STATE_DIR overrides artifact storage.\nSee https://github.com/SingleMai/sift/blob/v${version}/docs/preview.md\n`,
+    );
+    process.exit(0);
+  }
+  process.stderr.write("Unknown arguments. Run sift --help.\n");
+  process.exit(2);
+}
 
 const program = Effect.scoped(
   Effect.gen(function* () {

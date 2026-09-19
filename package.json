@@ -1,6 +1,6 @@
 {
   "name": "sift-mcp",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "private": true,
   "type": "module",
   "bin": {
@@ -21,7 +21,9 @@
     "eval:live": "node --import tsx scripts/evaluate-live.ts",
     "smoke:mcp:live": "npm run build && node --import tsx scripts/live-mcp.ts",
     "smoke:repository:live": "npm run build && node --import tsx scripts/live-mcp.ts --repository-test",
-    "eval:tasks:live": "npm run build && node --import tsx scripts/evaluate-tasks.ts"
+    "eval:tasks:live": "npm run build && node --import tsx scripts/evaluate-tasks.ts",
+    "prepack": "npm run build",
+    "verify:package": "npm run build && node --import tsx scripts/verify-package.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.30.0",
@@ -34,5 +36,21 @@
     "prettier": "3.9.8",
     "tsx": "4.23.13",
     "typescript": "7.0.2"
-  }
+  },
+  "description": "Local MCP command-output filtering with purpose-aware evidence selection",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SingleMai/sift.git"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "files": [
+    "dist",
+    "docs/configuration.md",
+    "docs/preview.md",
+    "npm-shrinkwrap.json"
+  ]
 }

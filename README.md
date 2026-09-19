@@ -4,7 +4,7 @@ Command output, selected for your task.
 
 Sift is a local MCP tool that runs a command, retains its original output, and selects evidence relevant to the calling model's stated purpose before returning it to context.
 
-**Status: experimental first implementation.** The command pipeline, stdio MCP tools, Jev adapter, and deterministic contract tests are implemented. Task-level live trials have exposed lost decisive evidence at both tested chunk sizes; this is not yet validated for unattended evidence filtering. See the [recorded failures and full-response measurements](eval/README.md#task-level-comparison-failures-exposed). Threshold calibration remains incomplete.
+**Status: `0.1.0-alpha.1` preview.** The command pipeline, stdio MCP tools, Jev adapter, and deterministic contract tests are implemented. Task-level live trials have exposed lost decisive evidence at both tested chunk sizes; this is not yet validated for unattended evidence filtering. See the [recorded failures and full-response measurements](eval/README.md#task-level-comparison-failures-exposed). Threshold calibration remains incomplete.
 
 ## Behavior
 
@@ -19,7 +19,18 @@ The stack is Node.js 24+, TypeScript, and Effect, initially supporting macOS/Lin
 
 Sift inherits the host process's permissions; it is not a sandbox. Judgment sends command-output windows to TypeSafe. Commands are never retried. Errors, incomplete processing, and filtered content are reported separately.
 
-## Start
+## Install the preview
+
+[Download v0.1.0-alpha.1](https://github.com/SingleMai/sift/releases/tag/v0.1.0-alpha.1) or install its built tarball:
+
+```sh
+npm install --prefix "$HOME/.local/share/sift-preview-runtime" --omit=dev --ignore-scripts \
+  https://github.com/SingleMai/sift/releases/download/v0.1.0-alpha.1/sift-mcp-0.1.0-alpha.1.tgz
+```
+
+Follow the [preview setup, first trial and rollback guide](docs/preview.md) to connect an MCP client. No source build is needed. The package is distributed through GitHub, not the npm registry.
+
+## Develop from source
 
 ```sh
 npm ci
